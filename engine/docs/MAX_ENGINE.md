@@ -25,19 +25,23 @@ reason, and at this stage there is none.
 
 ## Version numbering
 
-`0.1.0` is below `2.3.0` in semver ordering. Patch bundles declare `patcher: "2.3.0"` or similar in
-their manifest, and the manager refuses a bundle that requires a newer patcher than the one it
-carries. With the engine at 0.1.0, MAX Patches bundles must declare `0.1.0`, or the manager will
-report the source as incompatible.
+MAX Engine is **2.3.1**. That continues the upstream line rather than restarting at 0.1.0, and it is
+not a number picked to slip past a check:
 
-Two options, both acceptable, decided in Phase 4 when the bundle is built:
+- Every patch bundle declares `Patcher-Version` in its manifest, and the manager refuses a bundle that
+  needs a newer patcher than the one it carries (`isPatcherOutdated`).
+- MAX Engine's public ABI is byte-for-byte upstream 2.3.0's: `api/morphe-patcher.api` is unchanged,
+  and `apiCheck` fails if it ever moves.
+- A bundle built for 2.3.0 therefore *does* run here, and semver says an API-compatible change is a
+  patch bump. `0.1.0` would have rejected every inherited bundle on a technicality.
+- MAX's increments continue from there: 2.3.2, 2.3.3, and 2.4.0 only when the ABI moves.
 
-1. Start MAX Patches at a bundle that requires patcher `0.1.0`. Clean, but the first bundle cannot
-   also be used with an upstream Morphe manager.
-2. Version the engine `2.3.0-max.1` instead. Semver sorts a prerelease *below* 2.3.0, which has the
-   same problem, so the workable variant is `2.3.1-max.1`.
+The app no longer reads the patcher version from its own version catalog — that string could drift
+from the engine it actually carries. `app/build.gradle.kts` reads `engine/gradle.properties` and
+fails the build if the version is missing, so what the app reports is what the engine is.
 
-Until that is decided, this document records the constraint rather than hiding it.
+The three artifacts stay independently versioned: MAX Patcher 0.1.0, MAX Engine 2.3.1, MAX Patches
+0.1.0.
 
 ## Testing
 

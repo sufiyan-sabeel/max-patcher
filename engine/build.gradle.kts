@@ -165,3 +165,10 @@ signing {
     useGpgCmd()
     sign(publishing.publications["morphe-patcher-publication"])
 }
+
+
+// The compatibility tests assert that this engine's version still satisfies the bundles built for
+// upstream 2.3.0, so they need the version the build actually carries.
+tasks.withType<Test>().configureEach {
+    systemProperty("maxEngineVersion", version.toString())
+}
