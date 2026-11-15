@@ -975,8 +975,8 @@ Ang folder ay dapat maglaman ng isa o higit pa sa mga sumusunod na folder, depen
 - mipmap-xxxhdpi
 
 Ang bawat isa sa mga folder ay dapat maglaman ng lahat ng mga sumusunod na file:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Ang mga dimensyon ng larawan ay dapat tulad ng sumusunod:
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ Ang mga dimensyon ng larawan ay dapat tulad ng sumusunod:
 - mipmap-xxxhdpi: 432x432 px
 
 Opsyonal, ang path ay naglalaman ng isang 'drawable' folder na may monochrome icon file:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Opsyonal, ang path ay naglalaman ng isang notification icon sa isa sa mga sumusunod na format:
 - XML vector drawable sa 'drawable':
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - PNG raster images sa 'drawable-dpi' folders:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Pasadyang tatak ng header</string>
     <string name="settings_advanced_patch_options_custom_header_description">Binabago ang tatak ng header</string>
@@ -1009,8 +1009,8 @@ Kailangan ng isa o higit pang mga sumusunod na folder ang folder na ito, depende
 - drawable-xxxhdpi
 
 Dapat naglalaman ng bawat folder ang lahat ng sumusunod na mga file:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Dapat ang mga sumusunod na sukat ng larawan ay:
 - drawable-hdpi: 194x72 px

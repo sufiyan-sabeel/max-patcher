@@ -976,8 +976,8 @@ A carpeta debe conter unha ou máis das seguintes carpetas, dependendo do DPI do
 - mipmap-xxxhdpi
 
 Cada unha das carpetas debe conter todos os seguintes ficheiros:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 As dimensións da imaxe deben ser as seguintes:
 - mipmap-mdpi: 108x108 px
@@ -987,17 +987,17 @@ As dimensións da imaxe deben ser as seguintes:
 - mipmap-xxxhdpi: 432x432 px
 
 Opcionalmente, a ruta contén unha carpeta 'drawable' cun ficheiro de icona monocroma:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Opcionalmente, a ruta contén unha icona de notificación nun dos seguintes formatos:
 - Drawable vectorial XML en 'drawable':
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - Imaxes raster PNG nas carpetas 'drawable-dpi':
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Logo do cabeceiro personalizado</string>
     <string name="settings_advanced_patch_options_custom_header_description">Cambia o logo do cabeceiro</string>
@@ -1010,8 +1010,8 @@ A carpeta debe conter unha ou máis das seguintes carpetas, dependendo do DPI do
 - drawable-xxxhdpi
 
 Cada unha das carpetas debe conter todos os seguintes ficheiros:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 As dimensións da imaxe deben ser as seguintes:
 - drawable-hdpi: 194x72 px

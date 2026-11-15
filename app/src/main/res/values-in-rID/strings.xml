@@ -975,8 +975,8 @@ Folder harus berisi satu atau lebih folder berikut, tergantung pada DPI perangka
 - mipmap-xxxhdpi
 
 Setiap folder harus berisi semua berkas berikut:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Dimensi gambar harus sebagai berikut:
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ Dimensi gambar harus sebagai berikut:
 - mipmap-xxxhdpi: 432x432 piksel
 
 Opsional, jalur tersebut berisi folder ‘drawable’ dengan berkas ikon monokrom:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Opsional, jalur yang berisi ikon notifikasi dalam salah satu format berikut:
 - Gambar vektor XML di dalam ‘drawable’:
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - Gambar raster PNG di folder ‘drawable-dpi’:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Logo header kustom</string>
     <string name="settings_advanced_patch_options_custom_header_description">Mengubah logo header</string>
@@ -1009,8 +1009,8 @@ Folder tersebut harus berisi satu atau lebih folder berikut, tergantung pada DPI
 - drawable-xxxhdpi
 
 Setiap folder harus berisi semua berkas berikut:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Dimensi gambar harus sebagai berikut:
 - drawable-hdpi: 194x72 px

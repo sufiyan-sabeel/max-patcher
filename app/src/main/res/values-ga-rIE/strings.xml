@@ -973,8 +973,8 @@ Níl tionchar ar phaistí: cumasaigh paistí réamh-eisiúna do gach foinse sa l
 - mipmap-xxxhdpi
 
 Ní mór na comhaid seo a leanas a bheith i ngach fillteán:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Ní mór toisí na híomhá a bheith mar seo a leanas:
 - mipmap-mdpi: 108x108 px
@@ -984,17 +984,17 @@ Ní mór toisí na híomhá a bheith mar seo a leanas:
 - mipmap-xxxhdpi: 432x432 px
 
 De rogha air sin, tá fillteán 'intarraingthe' le deilbhín monacrómach sa chonair. comhad:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 De rogha air sin, tá deilbhín fógra sa chonair i gceann de na formáidí seo a leanas:
 - Veicteoir XML intarraingthe i 'drawable':
-morphe_notification_icon_custom.xml
+max_notification_icon_custom.xml
 - Íomhánna rastair PNG i bhfillteáin 'drawable-dpi':
-drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Lógó ceanntásc saincheaptha</string>
     <string name="settings_advanced_patch_options_custom_header_description">Athraíonn lógó an cheanntásca</string>
@@ -1007,8 +1007,8 @@ Ní mór ceann amháin nó níos mó de na fillteáin seo a leanas a bheith sa f
 - drawable-xxxhdpi
 
 Ní mór na comhaid seo a leanas a bheith i ngach fillteán:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Ní mór toisí na híomhá a bheith mar seo a leanas:
 - drawable-hdpi: 194x72 px
