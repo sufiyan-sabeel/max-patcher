@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">لا يمكن استخدام ملفات خيارات التعديل</string>
     <string name="patcher_option_paths_rejected_description">يشير خيار واحد أو أكثر من خيارات التعديل إلى ملفات مفقودة أو لا تحتوي على ما يطلبه التعديل. أزل المسارات للتعديل بدونها، أو أصلح الملفات كما توضح تعليمات الخيار وحاول مرة أخرى</string>
     <string name="patcher_option_paths_clear">أزل المسارات وتابع</string>
-    <string name="patcher_storage_permission_hint">تلميح: نقل الملفات إلى /Android/data/app.morphe.manager/files/ - لا تحتاج إلى أي إذن إضافي</string>
+    <string name="patcher_storage_permission_hint">تلميح: نقل الملفات إلى /Android/data/app.maxpatcher.manager/files/ - لا تحتاج إلى أي إذن إضافي</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">جارٍ الإعداد</string>
     <string name="patcher_step_load_patches">جارٍ تحميل التعديلات</string>

@@ -663,7 +663,7 @@ Desinstal·lar-la esborrarà permanentment totes les dades de l'aplicació"</str
     <string name="patcher_option_paths_rejected_title">No es poden utilitzar els fitxers d\'opcions de pegat</string>
     <string name="patcher_option_paths_rejected_description">Una o més opcions de pegat apunten a fitxers que falten o que no tenen el que el pegat sol·licita. Elimina els camins per pegar sense ells, o corregeix els fitxers segons descriuen les instruccions de l\'opció i torna-ho a intentar</string>
     <string name="patcher_option_paths_clear">Elimina els camins i continua</string>
-    <string name="patcher_storage_permission_hint">Consell: Moveu els fitxers a /Android/data/app.morphe.manager/files/ - no calen permisos addicionals</string>
+    <string name="patcher_storage_permission_hint">Consell: Moveu els fitxers a /Android/data/app.maxpatcher.manager/files/ - no calen permisos addicionals</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Preparant</string>
     <string name="patcher_step_load_patches">Carregant pedaços</string>

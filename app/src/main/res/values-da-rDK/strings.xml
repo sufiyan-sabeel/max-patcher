@@ -663,7 +663,7 @@ Afinstallation sletter permanent alle appdata."</string>
     <string name="patcher_option_paths_rejected_title">Patch-optionsfiler kan ikke bruges</string>
     <string name="patcher_option_paths_rejected_description">En eller flere patch-optioner henviser til filer, der mangler eller ikke indeholder det, patchen beder om. Fjern stierne for at patche uden dem, eller ret filerne som beskrevet i instruktionerne for optionen, og prøv igen</string>
     <string name="patcher_option_paths_clear">Fjern stierne og fortsæt</string>
-    <string name="patcher_storage_permission_hint">Tip: Flyt filer til /Android/data/app.morphe.manager/files/ - ingen ekstra tilladelser nødvendige</string>
+    <string name="patcher_storage_permission_hint">Tip: Flyt filer til /Android/data/app.maxpatcher.manager/files/ - ingen ekstra tilladelser nødvendige</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Forbereder</string>
     <string name="patcher_step_load_patches">Indlæser patches</string>

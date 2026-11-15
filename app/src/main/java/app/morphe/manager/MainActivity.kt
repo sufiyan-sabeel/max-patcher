@@ -323,7 +323,7 @@ class MainActivity : ComponentActivity() {
 
     companion object {
         /** Action other apps use to queue a batch patch run. */
-        const val ACTION_BATCH_PATCH = "app.morphe.manager.action.BATCH_PATCH"
+        const val ACTION_BATCH_PATCH = "app.maxpatcher.manager.action.BATCH_PATCH"
 
         /** Package names to patch, either a string array or a comma-separated string. */
         const val EXTRA_BATCH_PACKAGES = "packages"
@@ -332,22 +332,22 @@ class MainActivity : ComponentActivity() {
         const val EXTRA_SHORTCUT_ID = "shortcut_id"
 
         /** Action behind the update check shortcut. Shortcut intents must carry one. */
-        const val ACTION_CHECK_UPDATES = "app.morphe.manager.action.CHECK_UPDATES"
+        const val ACTION_CHECK_UPDATES = "app.maxpatcher.manager.action.CHECK_UPDATES"
 
         /** Action that reopens the batch queue from an automatic re-patch notification. */
-        const val ACTION_SHOW_BATCH_RESULT = "app.morphe.manager.action.SHOW_BATCH_RESULT"
+        const val ACTION_SHOW_BATCH_RESULT = "app.maxpatcher.manager.action.SHOW_BATCH_RESULT"
 
         /** Action behind the changelog button of an update notification. */
-        const val ACTION_SHOW_BUNDLE_CHANGELOG = "app.morphe.manager.action.SHOW_BUNDLE_CHANGELOG"
+        const val ACTION_SHOW_BUNDLE_CHANGELOG = "app.maxpatcher.manager.action.SHOW_BUNDLE_CHANGELOG"
 
         /** Source whose changelog the update notification opens. */
         const val EXTRA_CHANGELOG_BUNDLE_UID = "changelog_bundle_uid"
 
         /** Action behind the changelog button of a manager update notification. */
-        const val ACTION_SHOW_MANAGER_CHANGELOG = "app.morphe.manager.action.SHOW_MANAGER_CHANGELOG"
+        const val ACTION_SHOW_MANAGER_CHANGELOG = "app.maxpatcher.manager.action.SHOW_MANAGER_CHANGELOG"
 
         /** Action behind a notification opening an app's info dialog. */
-        const val ACTION_SHOW_APP_INFO = "app.morphe.manager.action.SHOW_APP_INFO"
+        const val ACTION_SHOW_APP_INFO = "app.maxpatcher.manager.action.SHOW_APP_INFO"
 
         /** Package the notification opens the info dialog for. */
         const val EXTRA_APP_INFO_PACKAGE = "app_info_package"

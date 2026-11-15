@@ -7,6 +7,7 @@ package app.morphe.manager.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import app.morphe.manager.ui.screen.shared.autoMirrored
+import app.morphe.manager.util.COMMUNITY_PATCHES_URL
 import app.morphe.manager.util.PROJECT_WEBSITE_URL
 import com.composables.icons.fontawesome.FontAwesome
 import com.composables.icons.fontawesome.brands.*
@@ -28,29 +29,26 @@ class AboutViewModel : ViewModel() {
                 preferred = true
             ),
             SocialLink(
-                name = "Changelog",
-                url = "$PROJECT_WEBSITE_URL/changelog"
+                name = "Releases",
+                url = "$PROJECT_WEBSITE_URL/releases"
             ),
             SocialLink(
                 name = "GitHub",
-                url = "https://github.com/MorpheApp"
+                url = "https://github.com/sufiyan-sabeel"
             ),
+            // Documentation, not a subreddit or a Crowdin project: MAX has neither yet, and pointing
+            // at Morphe's would send MAX's users to another project's community.
             SocialLink(
-                name = "Reddit",
-                url = "https://reddit.com/r/MorpheApp"
-            ),
-            SocialLink(
-                name = "Crowdin",
-                url = "$PROJECT_WEBSITE_URL/translate"
+                name = "Documentation",
+                url = COMMUNITY_PATCHES_URL
             )
         )
 
         private val socialIcons = mapOf(
             "Website" to MaterialSymbols.Rounded.Public,
             "GitHub" to FontAwesome.Brands.Github,
-            "Changelog" to MaterialSymbols.Rounded.Article.autoMirrored,
-            "Reddit" to FontAwesome.Brands.Reddit,
-            "Crowdin" to MaterialSymbols.Rounded.Translate,
+            "Releases" to MaterialSymbols.Rounded.Article.autoMirrored,
+            "Documentation" to MaterialSymbols.Rounded.Language,
         )
 
         fun getSocialIcon(name: String) = socialIcons[name] ?: MaterialSymbols.Rounded.Language

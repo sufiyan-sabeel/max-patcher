@@ -664,7 +664,7 @@
     <string name="patcher_option_paths_rejected_title">فایلی بژاردەکانی پینە ناکات بەکارهێنان</string>
     <string name="patcher_option_paths_rejected_description">یەکێک یان زیاتر لە بژاردەکانی پینە ئاماژە دەکەن بۆ فایلی کە نەماون یان ئەوەی پینەکە داوای دەکات تێدا نییە. ڕێگاکانی پینەکە لابدە، یان فایلەکان چاک بکە وەک لە ڕێنماییەکانی بژاردەکەدا باس کراوە و دووبارە هەوڵ بدەرەوە</string>
     <string name="patcher_option_paths_clear">ڕێگەی گەیشتنەکان لابدە و بەردەوام بە</string>
-    <string name="patcher_storage_permission_hint">ئامۆژگاری: فایلەکان بگوازەوە بۆ /Android/data/app.morphe.manager/files/ - پێویست بە مۆڵەتی زیادە ناکات</string>
+    <string name="patcher_storage_permission_hint">ئامۆژگاری: فایلەکان بگوازەوە بۆ /Android/data/app.maxpatcher.manager/files/ - پێویست بە مۆڵەتی زیادە ناکات</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">ئامادەکردن</string>
     <string name="patcher_step_load_patches">بارکردنی پینەکان</string>

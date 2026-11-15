@@ -663,7 +663,7 @@ Rakenduse eemaldamine kustutab kõigi rakenduse andmed jäädavalt"</string>
     <string name="patcher_option_paths_rejected_title">Tõlgenduse valikfailide ei saa kasutada</string>
     <string name="patcher_option_paths_rejected_description">Üks või mitu tõlgenduse valikut viitab failidele, mida puudub või mis ei sisalda tõlgenduse nõutavaid elementide. Eemaldage teed, et tõlgendada ilma nende ilma, või parandage failid vastavalt juhistustele ja proovige uuesti</string>
     <string name="patcher_option_paths_clear">Eemaldage teed ja jätkake</string>
-    <string name="patcher_storage_permission_hint">Nõuanne: Liiguta failid kataloogi /Android/data/app.morphe.manager/files/ - lisalubasid ei vaja</string>
+    <string name="patcher_storage_permission_hint">Nõuanne: Liiguta failid kataloogi /Android/data/app.maxpatcher.manager/files/ - lisalubasid ei vaja</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Ettevalmistamine</string>
     <string name="patcher_step_load_patches">Laaditakse paigutusi</string>

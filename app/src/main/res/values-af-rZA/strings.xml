@@ -663,7 +663,7 @@ Deïnstallering sal alle toepassingsdata permanent uitwis."</string>
     <string name="patcher_option_paths_rejected_title">Klapopsie-lêers kan nie gebruik word nie</string>
     <string name="patcher_option_paths_rejected_description">Een of meer klapopsies verwys na lêers wat ontbreek of nie bevat wat die klap vereis nie. Verwyder die paaie om sonder hulle te klap, of regstel die lêers soos die opsie-instruksies beskryf en probeer weer</string>
     <string name="patcher_option_paths_clear">Verwyder die paaie en gaan voort</string>
-    <string name="patcher_storage_permission_hint">Wenke: Skuif lêers na /Android/data/app.morphe.manager/files/ - geen ekstra toestemmings benodig nie</string>
+    <string name="patcher_storage_permission_hint">Wenke: Skuif lêers na /Android/data/app.maxpatcher.manager/files/ - geen ekstra toestemmings benodig nie</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Voorbereiding</string>
     <string name="patcher_step_load_patches">Laai patchings</string>

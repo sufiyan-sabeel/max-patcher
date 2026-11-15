@@ -663,7 +663,7 @@ Deinstalacija će trajno izbrisati sve podatke aplikacije"</string>
     <string name="patcher_option_paths_rejected_title">Datoteke opcija zakrpa se ne mogu koristiti</string>
     <string name="patcher_option_paths_rejected_description">Jedna ili više opcija zakrpe upućuju na datoteke koje nedostaju ili nemaju ono što zakrpa zahtijeva. Uklonite putanje do zakrpe bez njih, ili popravite datoteke kao što je opisano u uputstvima opcije i pokušajte ponovo</string>
     <string name="patcher_option_paths_clear">Ukloni putanje i nastavi</string>
-    <string name="patcher_storage_permission_hint">Savjet: Pomjerite datoteke u /Android/data/app.morphe.manager/files/ - nisu potrebne dodatne dozvole</string>
+    <string name="patcher_storage_permission_hint">Savjet: Pomjerite datoteke u /Android/data/app.maxpatcher.manager/files/ - nisu potrebne dodatne dozvole</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Priprema</string>
     <string name="patcher_step_load_patches">Učitavanje zakrpa</string>

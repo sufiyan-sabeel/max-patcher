@@ -663,7 +663,7 @@ Quraşdırma ləğvi bütün tətbiq məlumatını qalıcı siləcək"</string>
     <string name="patcher_option_paths_rejected_title">Yamaq seçim faylları istifadə edilə bilməz</string>
     <string name="patcher_option_paths_rejected_description">Bir və ya daha çox yamaq seçimi tapılmayan və ya yamağın tələb etdiklərini ehtiva etməyən fayllara istinad edir. Yamaqlamaq üçün həmin yolları sil və ya faylları seçimin təlimatlarında göstərildiyi kimi düzəldib təkrar cəhd et</string>
     <string name="patcher_option_paths_clear">Fayl yollarını sil və davam et</string>
-    <string name="patcher_storage_permission_hint">İpucu: Faylları /Android/data/app.morphe.manager/files/ -a köçür - əlavə icazələrə ehtiyac yoxdur</string>
+    <string name="patcher_storage_permission_hint">İpucu: Faylları /Android/data/app.maxpatcher.manager/files/ -a köçür - əlavə icazələrə ehtiyac yoxdur</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Hazırlanır</string>
     <string name="patcher_step_load_patches">Yamaqlar yüklənilir</string>

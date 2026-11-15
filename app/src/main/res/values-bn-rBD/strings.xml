@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">প্যাচ অপশন ফাইলগুলি ব্যবহার করা যাবে না</string>
     <string name="patcher_option_paths_rejected_description">এক বা একাধিক প্যাচ অপশন এমন ফাইলকে নির্দেশ করছে যা নিখোঁজ অথবা প্যাচের প্রয়োজনীয়তা পূরণ করছে না। সেগুলি ছাড়া প্যাচ করার জন্য পাথগুলো সরিয়ে ফেলুন, অথবা অপশন নির্দেশাবলীতে বর্ণিত অনুযায়ী ফাইলগুলো ঠিক করে পুনরায় চেষ্টা করুন</string>
     <string name="patcher_option_paths_clear">পাথগুলো সরান এবং চালিয়ে যান</string>
-    <string name="patcher_storage_permission_hint">টিপ: ফাইলগুলি /Android/data/app.morphe.manager/files/ এ সরান - অতিরিক্ত অনুমতি প্রয়োজন হয় না</string>
+    <string name="patcher_storage_permission_hint">টিপ: ফাইলগুলি /Android/data/app.maxpatcher.manager/files/ এ সরান - অতিরিক্ত অনুমতি প্রয়োজন হয় না</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">প্রস্তুতি</string>
     <string name="patcher_step_load_patches">প্যাচ লোড হচ্ছে</string>

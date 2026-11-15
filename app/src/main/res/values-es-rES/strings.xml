@@ -663,7 +663,7 @@ Al desinstalarla se borrarán permanentemente todos los datos de la aplicación"
     <string name="patcher_option_paths_rejected_title">Los archivos de opciones de parches no se pueden usar</string>
     <string name="patcher_option_paths_rejected_description">Una o más opciones de parches apuntan a archivos que faltan o que no tienen lo que el parche requiere. Elimina las rutas para parchear sin ellos, o corrige los archivos como describen las instrucciones de la opción e inténtalo de nuevo</string>
     <string name="patcher_option_paths_clear">Eliminar las rutas y continuar</string>
-    <string name="patcher_storage_permission_hint">Consejo: Mueve los archivos a /Android/data/app.morphe.manager/files/ - no se necesitan permisos adicionales</string>
+    <string name="patcher_storage_permission_hint">Consejo: Mueve los archivos a /Android/data/app.maxpatcher.manager/files/ - no se necesitan permisos adicionales</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Preparando</string>
     <string name="patcher_step_load_patches">Cargando parches</string>

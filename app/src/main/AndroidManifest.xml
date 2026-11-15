@@ -136,7 +136,7 @@
 
             <!-- Batch patching triggered by another app -->
             <intent-filter>
-                <action android:name="app.morphe.manager.action.BATCH_PATCH" />
+                <action android:name="app.maxpatcher.manager.action.BATCH_PATCH" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 

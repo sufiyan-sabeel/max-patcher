@@ -36,7 +36,7 @@ private const val GITHUB_PAT_NAME = "GitHub Personal Access Token"
 private const val GITHUB_PAT_SCOPE = "public_repo"
 
 private const val CREATE_GITHUB_PAT_URL =
-    "https://github.com/settings/tokens/new?scopes=$GITHUB_PAT_SCOPE&description=morphe-manager-github-integration"
+    "https://github.com/settings/tokens/new?scopes=$GITHUB_PAT_SCOPE&description=max-patcher-github-integration"
 
 /**
  * GitHub PAT settings item, a row of the updates group. It says whether GitHub turned the token

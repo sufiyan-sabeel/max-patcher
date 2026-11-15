@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">Τα αρχεία επιλογών διορθώματος δεν μπορούν να χρησιμοποιηθούν</string>
     <string name="patcher_option_paths_rejected_description">Μία ή περισσότερες επιλογές διορθώματος δείχνουν σε αρχεία που λείπουν ή δεν διαθέτουν τα στοιχεία που απαιτεί το διορθώμα. Αφαιρέστε τις διαδρομές για να προχωρήσετε στη διόρθωση χωρίς αυτά, ή διορθώστε τα αρχεία σύμφωνα με τις οδηγίες των επιλογών και δοκιμάστε ξανά</string>
     <string name="patcher_option_paths_clear">Αφαιρέστε τις διαδρομές.</string>
-    <string name="patcher_storage_permission_hint">Συμβουλή: Μετακινήστε τα αρχεία στο /Android/data/app.morphe.manager/files/ - Δε χρειάζονται επιπλέον άδειες</string>
+    <string name="patcher_storage_permission_hint">Συμβουλή: Μετακινήστε τα αρχεία στο /Android/data/app.maxpatcher.manager/files/ - Δε χρειάζονται επιπλέον άδειες</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Προετοιμασία</string>
     <string name="patcher_step_load_patches">Φόρτωση τροποποιήσεων</string>

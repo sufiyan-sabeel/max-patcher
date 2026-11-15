@@ -665,7 +665,7 @@ Durch die Deinstallation werden alle App-Daten dauerhaft gelöscht"</string>
     <string name="patcher_option_paths_rejected_title">Patch-Optiondateien können nicht verwendet werden</string>
     <string name="patcher_option_paths_rejected_description">Eine oder mehrere Patch-Optionen verweisen auf Dateien, die fehlen oder nicht die vom Patch geforderten Inhalte aufweisen. Entfernen Sie die Pfade, um ohne sie zu patchen, oder korrigieren Sie die Dateien gemäß den Anweisungen der Option und versuchen Sie es erneut</string>
     <string name="patcher_option_paths_clear">Pfade entfernen und fortfahren</string>
-    <string name="patcher_storage_permission_hint">Tipp: Verschiebe Dateien nach /Android/data/app.morphe.manager/files/ - keine zusätzlichen Berechtigungen erforderlich</string>
+    <string name="patcher_storage_permission_hint">Tipp: Verschiebe Dateien nach /Android/data/app.maxpatcher.manager/files/ - keine zusätzlichen Berechtigungen erforderlich</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Wird vorbereitet</string>
     <string name="patcher_step_load_patches">Patches werden geladen</string>

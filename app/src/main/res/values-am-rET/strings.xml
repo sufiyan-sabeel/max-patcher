@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">የፓች አማራጭ ፋይሎች ጥቅም ላይ ሊውሉ አይችሉም</string>
     <string name="patcher_option_paths_rejected_description">አንድ ወይም ከዚያ በላይ የፓች አማራጮች ወደሌሉ ወይም ፓቹ የሚፈልገውን ነገር ወደማይይዙ ፋይሎች ያመለክታሉ። ያለ እነሱ ፓች ለማድረግ መንገዶቹን ያስወግዱ፣ ወይም አማራጭ መመሪያዎቹ በሚገልጹት መሠረት ፋይሎቹን ያስተካክሉ እና እንደገና ይሞክሩ</string>
     <string name="patcher_option_paths_clear">መንገዶቹን አስወግደህ ቀጥል</string>
-    <string name="patcher_storage_permission_hint">ጠቃሚ ምክር፦ ፋይሎችን ወደ /Android/data/app.morphe.manager/files/ ያዛውሩ - ተጨማሪ ፈቃዶች አያስፈልጉም</string>
+    <string name="patcher_storage_permission_hint">ጠቃሚ ምክር፦ ፋይሎችን ወደ /Android/data/app.maxpatcher.manager/files/ ያዛውሩ - ተጨማሪ ፈቃዶች አያስፈልጉም</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">በማዘጋጀት ላይ</string>
     <string name="patcher_step_load_patches">ፓቾችን በመጫን ላይ</string>
