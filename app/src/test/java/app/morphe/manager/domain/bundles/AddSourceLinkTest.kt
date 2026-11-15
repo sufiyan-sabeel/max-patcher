@@ -6,6 +6,8 @@
 package app.morphe.manager.domain.bundles
 
 import app.morphe.manager.domain.bundles.RemotePatchBundle.Companion.addSourceLinkForEndpoint
+import app.morphe.manager.util.ADD_SOURCE_PATH
+import app.morphe.manager.util.PROJECT_WEBSITE_URL
 import kotlin.test.*
 
 /**
@@ -13,11 +15,20 @@ import kotlin.test.*
  * offered only for endpoints that link recreates, or the recipient adds a different source.
  */
 class AddSourceLinkTest {
+    /**
+     * The host is configuration, not behaviour: these tests assert how the query is built, against
+     * whatever [PROJECT_WEBSITE_URL] is set to. Hardcoding a host here made five tests fail the
+     * moment the project stopped being Morphe — a failure that said nothing about the code.
+     *
+     * MAX has no `/add-source` page yet, so a link generated today leads nowhere. The link format is
+     * kept because the app still accepts these links and the page is a matter of publishing one.
+     */
+    private val base = PROJECT_WEBSITE_URL + ADD_SOURCE_PATH
 
     @Test
     fun `github root bundle on stable branch is shared`() {
         assertEquals(
-            "https://morphe.software/add-source?github=crimera/piko",
+            "$base?github=crimera/piko",
             addSourceLinkForEndpoint(
                 "https://raw.githubusercontent.com/crimera/piko/main/patches-bundle.json",
                 name = null
@@ -28,7 +39,7 @@ class AddSourceLinkTest {
     @Test
     fun `github root bundle on dev branch is shared`() {
         assertEquals(
-            "https://morphe.software/add-source?github=hoo-dles/morphe-patches",
+            "$base?github=hoo-dles/morphe-patches",
             addSourceLinkForEndpoint(
                 "https://raw.githubusercontent.com/hoo-dles/morphe-patches/dev/patches-bundle.json",
                 name = null
@@ -39,7 +50,7 @@ class AddSourceLinkTest {
     @Test
     fun `gitlab root bundle is shared`() {
         assertEquals(
-            "https://morphe.software/add-source?gitlab=owner/repo",
+            "$base?gitlab=owner/repo",
             addSourceLinkForEndpoint(
                 "https://gitlab.com/owner/repo/-/raw/main/patches-bundle.json",
                 name = null
@@ -50,7 +61,7 @@ class AddSourceLinkTest {
     @Test
     fun `name is encoded as a query value`() {
         assertEquals(
-            "https://morphe.software/add-source?github=owner/repo&name=Piko%20%26%20Co",
+            "$base?github=owner/repo&name=Piko%20%26%20Co",
             addSourceLinkForEndpoint(
                 "https://raw.githubusercontent.com/owner/repo/main/patches-bundle.json",
                 name = "Piko & Co"
@@ -61,7 +72,7 @@ class AddSourceLinkTest {
     @Test
     fun `blank name is left out`() {
         assertEquals(
-            "https://morphe.software/add-source?github=owner/repo",
+            "$base?github=owner/repo",
             addSourceLinkForEndpoint(
                 "https://raw.githubusercontent.com/owner/repo/main/patches-bundle.json",
                 name = " "
