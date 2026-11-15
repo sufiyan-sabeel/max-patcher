@@ -1,0 +1,50 @@
+name: MAX Engine
+
+# The engine is a plain JVM library, so it builds and tests without the Android SDK. This is the
+# fastest signal on a change, and it is where an accidental ABI break is caught.
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'engine/**'
+      - 'vendor/**'
+      - '.github/workflows/engine-tests.yml'
+  pull_request:
+    paths:
+      - 'engine/**'
+      - 'vendor/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+
+      - name: Setup Java
+        uses: actions/setup-java@v6
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Cache Gradle
+        uses: burrunan/gradle-cache-action@v3
+
+      - name: Test
+        run: ./engine/gradlew -p engine test --stacktrace
+
+      - name: Public ABI check
+        run: ./engine/gradlew -p engine apiCheck --stacktrace
+
+      - name: Test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: engine-test-report
+          path: engine/build/reports/tests/test
+          if-no-files-found: ignore

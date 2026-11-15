@@ -1,0 +1,81 @@
+name: Development build
+
+# Builds a debug APK and records its SHA-256. It publishes nothing: no release, no tag, no upload
+# anywhere but the workflow's own artifacts. A real release stays blocked until a build succeeds and
+# the APK installs on a device.
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - dev
+
+concurrency:
+  group: dev-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Debug APK
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+
+      - name: Setup Java
+        uses: actions/setup-java@v6
+        with:
+          distribution: 'temurin'
+          java-version: |
+            17
+            25
+            21
+
+      - name: Cache Gradle
+        uses: burrunan/gradle-cache-action@v3
+
+      - name: Verify submodule pins
+        run: |
+          # The build must use exactly the commits recorded in vendor/PINS.md.
+          test "$(git -C vendor/ARSCLib rev-parse HEAD)" = "50418a07a806f7fc6d8a567be81d951d6e360079" \
+            || { echo "vendor/ARSCLib is not at its pinned commit"; exit 1; }
+          test "$(git -C vendor/smali rev-parse HEAD)" = "bbabf5f9980028daba64c19366483bbddc05cf01" \
+            || { echo "vendor/smali is not at its pinned commit"; exit 1; }
+
+      - name: Unit tests
+        run: ./gradlew test --stacktrace
+
+      - name: Engine tests and ABI check
+        run: ./engine/gradlew -p engine test apiCheck --stacktrace
+
+      - name: Assemble debug APK
+        run: ./gradlew :app:assembleDebug --stacktrace
+
+      - name: Checksums
+        run: |
+          cd app/build/outputs/apk/debug
+          sha256sum *.apk | tee SHA256SUMS.txt
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: max-patcher-debug-${{ github.sha }}
+          path: |
+            app/build/outputs/apk/debug/*.apk
+            app/build/outputs/apk/debug/SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Report
+        run: |
+          echo "### Development build" >> "$GITHUB_STEP_SUMMARY"
+          echo "Not a release. Unsigned debug build for testing only." >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat app/build/outputs/apk/debug/SHA256SUMS.txt >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"

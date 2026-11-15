@@ -1,0 +1,75 @@
+MAX Patcher NOTICE
+==================
+
+MAX Patcher is an independent fork of Morphe Manager
+(https://github.com/MorpheApp/morphe-manager), modified and maintained as a separate project.
+It is not affiliated with, endorsed by, or an official release of the Morphe project.
+
+Upstream attribution
+--------------------
+
+This program is based on Morphe Manager, Copyright 2026 Morphe, licensed under the GNU General
+Public License version 3.0. The source of the upstream project is
+https://github.com/MorpheApp/morphe-manager.
+
+Morphe Manager is itself derived from ReVanced Manager, Copyright the ReVanced contributors,
+licensed under the GNU General Public License version 3.0.
+
+Every file carrying an upstream copyright header keeps that header, and the text below is the
+upstream NOTICE, preserved as GPLv3 Section 7 requires.
+
+Modifications by MAX Patcher
+----------------------------
+
+MAX Patcher is a modified version of the Program, identified and marked as different from the
+original in the following ways, as GPLv3 Section 7c requires:
+
+- The application name is MAX Patcher, not Morphe.
+- The application id is app.maxpatcher.manager, which installs separately from the original.
+- The launcher icon, splash mark, notification icons and wordmark are original MAX artwork.
+  The upstream branding assets are not covered by the upstream open-source licence and none of
+  them are redistributed here.
+- The patcher engine is a fork, maintained in this repository at `engine/` as MAX Engine, built
+  from source instead of downloaded from the Morphe GitHub Packages registry. Its own NOTICE lists
+  what it changes.
+- The default patch source is MAX Patches, a separate project, not Morphe Patches.
+- The accent colours differ from the upstream palette.
+- The package names, class names and internal architecture are unchanged, so that upstream
+  features, patches and patch bundles keep working. A different package name is not what
+  Section 7c asks for, and changing it would break every patch API for no user-visible gain.
+
+GPLv3 Section 7e: no trademark rights
+-------------------------------------
+
+This licence does not grant any rights or permission under trademark law to use the name
+"Morphe", or any of the Program's trade names, trademarks, service marks, or logos. MAX Patcher
+does not use them. References to Morphe in this project are descriptive only, as in "compatible
+with the Morphe patch format".
+
+Upstream NOTICE, preserved
+--------------------------
+
+Morphe NOTICE
+
+https://github.com/MorpheApp/morphe-manager
+
+=============
+
+Portions of this software are provided "AS IS" by the Morphe software project.
+Any express or implied warranties, including the implied warranties of
+merchantability and fitness for a particular purpose, are disclaimed.
+
+
+GPLv3 Section 7c: Prohibiting Misrepresentation of Origin
+
+You are prohibited from misrepresenting the origin of the Program,
+and modified versions of the Program must be identified and marked in
+reasonable ways as different from the original version so as not to cause
+confusion regarding their origin.
+
+
+GPLv3 Section 7e: Declining Grant of Trademark Rights
+
+This License does not grant any rights or permission under trademark law
+to use the name "Morphe" or any of the Program's trade names, trademarks,
+service marks, or logos.

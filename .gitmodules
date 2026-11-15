@@ -1,0 +1,6 @@
+[submodule "vendor/ARSCLib"]
+	path = vendor/ARSCLib
+	url = https://github.com/MorpheApp/ARSCLib.git
+[submodule "vendor/smali"]
+	path = vendor/smali
+	url = https://github.com/MorpheApp/smali.git
