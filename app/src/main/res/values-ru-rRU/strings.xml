@@ -975,8 +975,8 @@
 - mipmap-xxxhdpi
 
 Каждая из папок должна содержать все следующие файлы:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Размеры изображений должны быть следующими:
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ morphe_adaptive_foreground_custom.png
 - mipmap-xxxhdpi: 432x432 px
 
 Необязательно, путь содержит папку 'drawable' с монохромным файлом значка:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Необязательно, путь содержит значок уведомления в одном из следующих форматов:
 - XML векторный значок в 'drawable':
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - PNG растровые изображения в папках 'drawable-dpi':
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Свой заголовок</string>
     <string name="settings_advanced_patch_options_custom_header_description">Изменить логотип в заголовке</string>
@@ -1009,8 +1009,8 @@ morphe_adaptive_monochrome_custom.xml
 - drawable-xxxhdpi
 
 В каждой из папок должны присутствовать следующие файлы:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Размеры изображений должны соответствовать следующим требованиям:
 - drawable-hdpi: 194x72 пикс.

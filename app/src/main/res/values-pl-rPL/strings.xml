@@ -976,8 +976,8 @@ Folder musi zawierać jeden lub więcej z następujących folderów, w zależno�
 - mipmap-xxxhdpi
 
 Każdy z folderów musi zawierać wszystkie następujące pliki:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Wymagane są następujące wymiary obrazów:
 - mipmap-mdpi: 108x108 px
@@ -987,17 +987,17 @@ Wymagane są następujące wymiary obrazów:
 - mipmap-xxxhdpi: 432x432 px
 
 Ścieżka może zawierać folder \"drawable\" z monochromatycznym plikiem ikony:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Ścieżka może zawierać ikonę powiadomienia w jednym z następujących formatów:
 - Plik wektorowy XML w folderze \"drawable\":
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - Pliki rastrowe PNG w folderach \"drawable-dpi\":
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Własne logo w nagłówku</string>
     <string name="settings_advanced_patch_options_custom_header_description">Zmienia logo w nagłówku</string>
@@ -1010,8 +1010,8 @@ Folder musi zawierać jeden lub więcej z następujących folderów, w zależno�
 - drawable-xxxhdpi
 
 Każdy z folderów musi zawierać wszystkie następujące pliki:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Wymagane są następujące wymiary obrazów:
 - drawable-hdpi: 194x72 px

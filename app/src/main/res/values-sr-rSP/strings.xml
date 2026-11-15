@@ -975,8 +975,8 @@ Patches are not affected: enable pre-release patches for each source in the patc
 - mipmap-xxxhdpi
 
 Сваки од фолдера мора да садржи све следеће фајлове:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Димензије слика морају бити следеће:
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ morphe_adaptive_foreground_custom.png
 - mipmap-xxxhdpi: 432x432 px
 
 Опционално, пут садржи 'drawable' фолдер са монохроматском иконом:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Опционално, пут садржи икону за обавештења у једном од следећих формата:
 - XML векторска икона за цртање у 'drawable':
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - PNG растерске слике у 'drawable-dpi' фолдерима:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Прилагођени заглавље</string>
     <string name="settings_advanced_patch_options_custom_header_description">Мења логотип заглавља</string>
@@ -1009,8 +1009,8 @@ morphe_adaptive_monochrome_custom.xml
 - drawable-xxxhdpi
 
 Сва од ових папки мора да садрже оба од следећих фајла:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Димензије слика мора бити следеће:
 - drawable-hdpi: 194x72 px

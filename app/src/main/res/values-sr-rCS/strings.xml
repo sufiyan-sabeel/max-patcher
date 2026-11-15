@@ -975,8 +975,8 @@ Mapa mora da sadrži jednu ili više sledećih mapa, u zavisnosti od DPI uređaj
 - mipmap-xxxhdpi
 
 Svaka od mapa mora da sadrži sve sledeće datoteke:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Dimenzije slike moraju biti sledeće:
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ Dimenzije slike moraju biti sledeće:
 - mipmap-xxxhdpi: 432x432 px
 
 Opciono, putanja sadrži mapu 'drawable' sa datotekom ikone u boji:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Opciono, putanja sadrži ikonu obaveštenja u jednom od sledećih formata:
 - XML vektorski crtež u 'drawable':
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - PNG rasturne slike u mape 'drawable-dpi':
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Promeni ikonu zaglavlja</string>
     <string name="settings_advanced_patch_options_custom_header_description">Menja logo zaglavlja</string>

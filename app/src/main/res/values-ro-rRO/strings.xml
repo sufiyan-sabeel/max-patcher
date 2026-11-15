@@ -975,8 +975,8 @@ Folderul trebuie să conțină unul sau mai multe dintre următoarele foldere, �
 - mipmap-xxxhdpi
 
 Fiecare dintre foldere trebuie să conțină toate următoarele fișiere:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Dimensiunile imaginii trebuie să fie următoarele:
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ Dimensiunile imaginii trebuie să fie următoarele:
 - mipmap-xxxhdpi: 432x432 px
 
 Opțional, calea conține un folder 'drawable' cu un fișier de pictogramă monocrom:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Opțional, calea conține o pictogramă de notificare în unul dintre următoarele formate:
 - Pictogramă vectorială XML în 'drawable':
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - Imagini raster PNG în folderele 'drawable-dpi':
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Logo antet personalizat</string>
     <string name="settings_advanced_patch_options_custom_header_description">Schimbă logo-ul antetului</string>
@@ -1009,8 +1009,8 @@ Folderul trebuie să conțină unul sau mai multe dintre următoarele folderuri,
 - drawable-xxxhdpi
 
 Fiecare dintre folderurile trebuie să conțină toate următoarele fișiere:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Dimensiunile imaginilor trebuie să fie următoarele:
 - drawable-hdpi: 194x72 px

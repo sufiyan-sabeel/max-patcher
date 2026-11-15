@@ -975,8 +975,8 @@ De map moet één of meer van de volgende mappen bevatten, afhankelijk van de DP
 - mipmap-xxxhdpi
 
 Elke van de mappen moet alle volgende bestanden bevatten:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 De afbeeldingsafmetingen moeten als volgt zijn:
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ De afbeeldingsafmetingen moeten als volgt zijn:
 - mipmap-xxxhdpi: 432x432 px
 
 Optioneel, het pad bevat een 'drawable' map met een monochrome pictogrambestand:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Optioneel, het pad bevat een meldingpictogram in een van de volgende formaten:
 - XML vector drawable in 'drawable':
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - PNG rasterafbeeldingen in 'drawable-dpi' mappen:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Aangepast headerlogo</string>
     <string name="settings_advanced_patch_options_custom_header_description">Wijzigt het headerlogo</string>
@@ -1009,8 +1009,8 @@ De map moet een of meer van de volgende mappen bevatten, afhankelijk van het DPI
 - drawable-xxxhdpi
 
 Elke van de mappen moet alle volgende bestanden bevatten:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 De afbeelddimensionen moeten als volgt zijn:
 - drawable-hdpi: 194x72 px

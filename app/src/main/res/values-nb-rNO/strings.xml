@@ -975,8 +975,8 @@ Mappen må inneholde en eller flere av følgende mapper, avhengig av enhetens DP
 - mipmap-xxxhdpi
 
 Hver av mappene må inneholde alle følgende filer:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Bilde dimensjoner må være som følger:
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ Bilde dimensjoner må være som følger:
 - mipmap-xxxhdpi: 432x432 px
 
 Eventuelt inneholder banen en 'drawable'-mappe med et monokromt ikonfil:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Eventuelt inneholder banen et varslingsikon i et av følgende formater:
 - XML vector drawable i 'drawable':
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - PNG raster images i 'drawable-dpi'-mapper:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Egendefinert header-logo</string>
     <string name="settings_advanced_patch_options_custom_header_description">Endrer header-logoen</string>
@@ -1009,8 +1009,8 @@ Eventuelt inneholder banen et varslingsikon i et av følgende formater:
 - drawable-xxxhdpi
 
 Hver av mappene må inneholde alle følgende filer:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
  Bilde dimensjoner må være som følger:
 - drawable-hdpi: 194x72 px
