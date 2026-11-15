@@ -60,8 +60,8 @@ The folder must contain one or more of the following folders, depending on the D
 - mipmap-xxxhdpi
 
 Each of the folders must contain all of the following files:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 The image dimensions must be as follows:
 - mipmap-mdpi: 108x108 px
@@ -71,8 +71,8 @@ The image dimensions must be as follows:
 - mipmap-xxxhdpi: 432x432 px
 
 Optionally, the path contains a 'drawable' folder with any of the monochrome icon files:
-morphe_adaptive_monochrome_custom.xml
-morphe_notification_icon_custom.xml"""
+max_adaptive_monochrome_custom.xml
+max_notification_icon_custom.xml"""
 
         // Custom header instructions
         const val CUSTOM_HEADER_INSTRUCTION = """Folder with images to use as a custom header logo.
@@ -84,8 +84,8 @@ The folder must contain one or more of the following folders, depending on the D
 - drawable-xxxhdpi
 
 Each of the folders must contain all of the following files:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png 
+max_header_custom_light.png
+max_header_custom_dark.png 
 
 The image dimensions must be as follows:
 - drawable-hdpi: 194x72 px

@@ -975,8 +975,8 @@
 - mipmap-xxxhdpi
 
 እያንዳንዱ ፎልደር የሚከተሉትን ፋይሎች በሙሉ መያዝ አለበት፦
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 የምስሎቹ መጠን የሚከተለው መሆን አለበት፦
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ morphe_adaptive_foreground_custom.png
 - mipmap-xxxhdpi: 432x432 px
 
 እንደ አማራጭ፣ መንገዱ (path) የሞኖክሮም አዶ ፋይል ያለበት 'drawable' ፎልደር ሊኖረው ይችላል፦
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 እንደ አማራጭ፣ መንገዱ ከሚከተሉት ፎርማቶች በአንዱ የማሳወቂያ አዶ ሊኖረው ይችላል፦
 - በ 'drawable' ውስጥ ያለ XML vector drawable፦
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - በ 'drawable-dpi' ፎልደሮች ውስጥ ያሉ PNG raster ምስሎች፦
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">የተፈለገ የራስጌ አርማ</string>
     <string name="settings_advanced_patch_options_custom_header_description">የራስጌ አርማውን ይቀይራል</string>
@@ -1009,8 +1009,8 @@ morphe_adaptive_monochrome_custom.xml
 - drawable-xxxhdpi
 
 እያንዳንዱ ፎልደር የሚከተሉትን ፋይሎች በሙሉ መያዝ አለበት፦
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 የምስሎቹ መጠን እንደሚከተለው መሆን አለበት፦
 - drawable-hdpi: 194x72 px

@@ -978,8 +978,8 @@
 - mipmap-xxxhdpi
 
 يجب أن تحتوي كل من المجلدات على جميع الملفات التالية:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 يجب أن تكون أبعاد الصورة كما يلي:
 - mipmap-mdpi: 108x108 px
@@ -989,17 +989,17 @@ morphe_adaptive_foreground_custom.png
 - mipmap-xxxhdpi: 432x432 px
 
 اختياريًا، يحتوي المسار على مجلد 'drawable' مع ملف أيقونة أحادية اللون:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 اختياريًا، يحتوي المسار على أيقونة إشعار بإحدى التنسيقات التالية:
 - XML vector drawable in 'drawable':
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - PNG raster images in 'drawable-dpi':
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">علامة شعار مخصصة</string>
     <string name="settings_advanced_patch_options_custom_header_description">يغيّر علامة الشعار</string>
@@ -1012,8 +1012,8 @@ morphe_adaptive_monochrome_custom.xml
 • drawable-xxxhdpi
 
 يجب أن يحتوي كل مجلد منها على جميع الملفات التالية:
-• morphe_header_custom_light.png
-• morphe_header_custom_dark.png
+• max_header_custom_light.png
+• max_header_custom_dark.png
 
 يجب أن تكون أبعاد الصورة كما يلي:
 • drawable-hdpi: 194x72 px

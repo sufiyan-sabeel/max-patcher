@@ -81,10 +81,10 @@ private object AdaptiveIconConfig {
     }
 
     // File names
-    const val BACKGROUND_FILE_NAME = "morphe_adaptive_background_custom.png"
-    const val FOREGROUND_FILE_NAME = "morphe_adaptive_foreground_custom.png"
-    const val NOTIFICATION_FILE_NAME = "morphe_notification_icon_custom.png"
-    const val MONOCHROME_ADAPTIVE_FILE_NAME = "morphe_adaptive_monochrome_custom.xml"
+    const val BACKGROUND_FILE_NAME = "max_adaptive_background_custom.png"
+    const val FOREGROUND_FILE_NAME = "max_adaptive_foreground_custom.png"
+    const val NOTIFICATION_FILE_NAME = "max_notification_icon_custom.png"
+    const val MONOCHROME_ADAPTIVE_FILE_NAME = "max_adaptive_monochrome_custom.xml"
     const val DRAWABLE_FOLDER_NAME = "drawable"
 
     // Density folders and sizes

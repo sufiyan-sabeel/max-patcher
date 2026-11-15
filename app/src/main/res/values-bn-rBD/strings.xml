@@ -975,8 +975,8 @@
 - mipmap-xxxhdpi
 
 এই ফোল্ডারগুলোর প্রতিটিতে নিম্নলিখিত ফাইলগুলো থাকতে হবে:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 ছবির মাত্রাগুলো নিম্নরূপ হতে হবে:
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ morphe_adaptive_foreground_custom.png
 - mipmap-xxxhdpi: 432x432 px
 
 ঐচ্ছিকভাবে, path এ একটি 'drawable' ফোল্ডার থাকতে পারে যার মধ্যে একটি monochrome icon ফাইল থাকবে:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 ঐচ্ছিকভাবে, path এ নিম্নলিখিত ফরম্যাটে একটি notification icon থাকতে পারে:
 - 'drawable' এ XML vector drawable:
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - 'drawable-dpi' ফোল্ডারগুলোতে PNG raster images:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">কাস্টম হেডার লোগো</string>
     <string name="settings_advanced_patch_options_custom_header_description">হেডার লোগো পরিবর্তন করে।</string>

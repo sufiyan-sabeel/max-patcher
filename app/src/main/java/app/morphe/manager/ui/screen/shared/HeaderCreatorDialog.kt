@@ -61,14 +61,14 @@ private enum class HeaderTheme(
     val field: Color
 ) {
     Light(
-        fileName = "morphe_header_custom_light.png",
+        fileName = "max_header_custom_light.png",
         titleResId = R.string.header_creator_light_theme,
         bar = Color.White,
         content = Color(0xFF0F0F0F),
         field = Color(0xFFF2F2F2)
     ),
     Dark(
-        fileName = "morphe_header_custom_dark.png",
+        fileName = "max_header_custom_dark.png",
         titleResId = R.string.header_creator_dark_theme,
         bar = Color(0xFF0F0F0F),
         content = Color.White,

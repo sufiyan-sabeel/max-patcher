@@ -975,8 +975,8 @@ La carpeta ha de contenir una o més de les following carpetes, depenent del DPI
 - mipmap-xxxhdpi
 
 Cadascuna de les carpetes ha de contenir tots els fitxers següents:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Les dimensions de la imatge han de ser les següents:
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ Les dimensions de la imatge han de ser les següents:
 - mipmap-xxxhdpi: 432x432 px
 
 Opcionalment, la ruta conté una carpeta 'drawable' amb un fitxer d'icona monocromàtica:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Opcionalment, la ruta conté una icona de notificació en un dels formats següents:
 - XML vector drawable a 'drawable':
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - Imatges raster PNG a les carpetes 'drawable-dpi':
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Logotip de capçalera personalitzat</string>
     <string name="settings_advanced_patch_options_custom_header_description">Canvia el logotip del capçallet</string>
@@ -1009,8 +1009,8 @@ La carpeta ha de contenir una o més de les carpetes següents, depenent del DPI
 - drawable-xxxhdpi
 
 Cadascuna de les carpetes ha de contenir tots els fitxers següents:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Les dimensions de la imatge han de ser les següents:
 - drawable-hdpi: 194x72 px

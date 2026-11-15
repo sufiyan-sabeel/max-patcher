@@ -976,8 +976,8 @@
 - mipmap-xxxhdpi
 
 Кожная з папак павінна ўтрымліваць наступныя файлы:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Памеры выяў павінны быць наступнымі:
 - mipmap-mdpi: 108x108 px
@@ -987,17 +987,17 @@ morphe_adaptive_foreground_custom.png
 - mipmap-xxxhdpi: 432x432 px
 
 Па жаданні шлях можа ўтрымліваць папку 'drawable' з файлам манахрамнай іконкі:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Па жаданні шлях можа ўтрымліваць іконку паведамленняў у адным з наступных фарматаў:
 - XML vector drawable у 'drawable':
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - PNG растровая выява ў папаках 'drawable-dpi':
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Уласны лагатып загалоўка</string>
     <string name="settings_advanced_patch_options_custom_header_description">Змяняе лагатып у загалоўку</string>
@@ -1010,8 +1010,8 @@ morphe_adaptive_monochrome_custom.xml
 - drawable-xxxhdpi
 
 Кожная з папак павінна ўтрымліваць наступныя файлы:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Памеры выяў павінны быць наступнымі:
 - drawable-hdpi: 194x72 px
