@@ -663,7 +663,7 @@ Deïnstalleren wist alle app-gegevens permanent."</string>
     <string name="patcher_option_paths_rejected_title">Patch-optiebestanden kunnen niet worden gebruikt</string>
     <string name="patcher_option_paths_rejected_description">Een of meer patch-opties verwijzen naar bestanden die ontbreken of niet voldoen aan de vereisten van de patch. Verwijder de paden om zonder deze bestanden te patchen, of herstel de bestanden volgens de instructies van de optie en probeer het opnieuw</string>
     <string name="patcher_option_paths_clear">Het pictogram waarmee de app wordt gepatcht. Het wordt ook gebruikt waar de app het later niet kan wijzigen, zoals bij Android Auto en in de app-lijst van de systeeminstellingen.</string>
-    <string name="patcher_storage_permission_hint">Tip: Verplaats bestanden naar /Android/data/app.morphe.manager/files/ - geen extra toestemmingen nodig</string>
+    <string name="patcher_storage_permission_hint">Tip: Verplaats bestanden naar /Android/data/app.maxpatcher.manager/files/ - geen extra toestemmingen nodig</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Voorbereiden</string>
     <string name="patcher_step_load_patches">Patches laden</string>

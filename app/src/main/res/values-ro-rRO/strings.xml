@@ -663,7 +663,7 @@ Dezinstalarea va șterge definitiv toate datele aplicației."</string>
     <string name="patcher_option_paths_rejected_title">Fișierele de opțiuni pentru patch nu pot fi utilizate</string>
     <string name="patcher_option_paths_rejected_description">Una sau mai multe opțiuni de patch trimit către fișiere care lipsesc sau care nu conțin ceea ce solicită patch-ul. Eliminați căile pentru a aplica patch-ul fără acestea, sau reparați fișierele conform instrucțiunilor opțiunii și încercați din nou</string>
     <string name="patcher_option_paths_clear">Eliminați căile și continuați</string>
-    <string name="patcher_storage_permission_hint">Sugestie: Mută fișierul în /Android/data/app.morphe.manager/files/ - nu sunt necesare alte permisiuni</string>
+    <string name="patcher_storage_permission_hint">Sugestie: Mută fișierul în /Android/data/app.maxpatcher.manager/files/ - nu sunt necesare alte permisiuni</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Pregătire</string>
     <string name="patcher_step_load_patches">Se încarcă modificările</string>

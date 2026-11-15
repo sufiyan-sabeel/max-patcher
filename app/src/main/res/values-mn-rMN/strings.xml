@@ -663,7 +663,7 @@ APK-г хаанаас авахыг сонгоно уу"</string>
     <string name="patcher_option_paths_rejected_title">Патчийн сонголтын файлуудыг ашиглах боломжгүй</string>
     <string name="patcher_option_paths_rejected_description">Нэг буюу түүнээс дээш патчийн сонголт нь байхгүй файл руу зааж байгаа эсвэл патчинд шаардлагатай зүйл байхгүй байна. Тэдгээр файлыг хасаж патчлах эсвэл сонголтын зааврын дагуу файлуудыг засаад дахин оролдоно уу</string>
     <string name="patcher_option_paths_clear">Замуудыг устгаад үргэлжлүүлэх</string>
-    <string name="patcher_storage_permission_hint">Зөвлөмж: Файлуудыг /Android/data/app.morphe.manager/files/ хавтсанд шилжүүлбэл нэмэлт зөвшөөрөл шаардлагагүй болно</string>
+    <string name="patcher_storage_permission_hint">Зөвлөмж: Файлуудыг /Android/data/app.maxpatcher.manager/files/ хавтсанд шилжүүлбэл нэмэлт зөвшөөрөл шаардлагагүй болно</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Бэлдэж байна</string>
     <string name="patcher_step_load_patches">Засваруудыг ачаалж байна</string>

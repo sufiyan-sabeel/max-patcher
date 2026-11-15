@@ -663,7 +663,7 @@ APK를 가져올 위치를 선택하세요"</string>
     <string name="patcher_option_paths_rejected_title">패치 옵션 파일을 사용할 수 없음</string>
     <string name="patcher_option_paths_rejected_description">하나 이상의 패치 옵션이 패치 대상 파일을 찾을 수 없거나, 해당 파일에 패치가 요구하는 내용이 없습니다. 해당 파일이 없는 경로를 패치 목록에서 제거하거나, 옵션 설명에 따라 파일을 수정한 후 다시 시도하세요</string>
     <string name="patcher_option_paths_clear">경로를 제거하고 계속 진행</string>
-    <string name="patcher_storage_permission_hint">힌트: 파일을 \'/Android/data/app.morphe.manager/files/\' 로 옮기세요. 추가 권한이 필요 없습니다</string>
+    <string name="patcher_storage_permission_hint">힌트: 파일을 \'/Android/data/app.maxpatcher.manager/files/\' 로 옮기세요. 추가 권한이 필요 없습니다</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">준비하는 중</string>
     <string name="patcher_step_load_patches">패치를 불러오는 중</string>

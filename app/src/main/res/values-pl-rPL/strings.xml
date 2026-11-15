@@ -664,7 +664,7 @@ Odinstalowanie bezpowrotnie usunie wszystkie dane aplikacji"</string>
     <string name="patcher_option_paths_rejected_title">Nie można użyć plików opcji modyfikacji</string>
     <string name="patcher_option_paths_rejected_description">Co najmniej jedna opcja modyfikacji wskazuje na pliki, których brakuje lub które nie zawierają danych wymaganych przez modyfikację. Usuń ścieżki, aby zmodyfikować aplikację bez nich, lub popraw pliki zgodnie z instrukcją opcji i spróbuj ponownie</string>
     <string name="patcher_option_paths_clear">Usuń ścieżki i kontynuuj</string>
-    <string name="patcher_storage_permission_hint">Wskazówka: Przenieś pliki do /Android/data/app.morphe.manager/files/. Nie wymaga to dodatkowych uprawnień</string>
+    <string name="patcher_storage_permission_hint">Wskazówka: Przenieś pliki do /Android/data/app.maxpatcher.manager/files/. Nie wymaga to dodatkowych uprawnień</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Przygotowywanie</string>
     <string name="patcher_step_load_patches">Wczytywanie modyfikacji</string>

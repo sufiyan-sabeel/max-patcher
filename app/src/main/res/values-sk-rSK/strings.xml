@@ -663,7 +663,7 @@ Odinštalovanie trvalo vymaže všetky údaje aplikácie."</string>
     <string name="patcher_option_paths_rejected_title">Súbory s možnosťami záplaty sa nedajú použiť</string>
     <string name="patcher_option_paths_rejected_description">Jedna alebo viac možností záplaty odkazuje na súbory, ktoré chýbajú alebo neobsahujú to, čo záplata vyžaduje. Odstráňte cesty k záplatám bez nich, alebo opravte súbory podľa pokynov v možnostiach a skúste to znova</string>
     <string name="patcher_option_paths_clear">Odstrániť cesty a pokračovať.</string>
-    <string name="patcher_storage_permission_hint">Tip: Presuňte súbory do /Android/data/app.morphe.manager/files/ - žiadne ďalšie povolenia nie sú potrebné</string>
+    <string name="patcher_storage_permission_hint">Tip: Presuňte súbory do /Android/data/app.maxpatcher.manager/files/ - žiadne ďalšie povolenia nie sú potrebné</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Pripravujem sa</string>
     <string name="patcher_step_load_patches">Načítavam záplaty</string>

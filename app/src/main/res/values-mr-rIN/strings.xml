@@ -662,7 +662,7 @@
     <string name="patcher_option_paths_rejected_title">पॅच पर्याय फाईल्स वापरता येणार नाहीत</string>
     <string name="patcher_option_paths_rejected_description">एक किंवा अधिक पॅच पर्याय अशा फाईल्सकडे निर्देशित करतात ज्या गहाळ आहेत किंवा ज्यामध्ये पॅचसाठी आवश्यक माहिती नाही. त्यांच्याशिवाय पॅच करण्यासाठी ते मार्ग काढून टाका, किंवा पर्यायातील सूचनांनुसार फाईल्स दुरुस्त करा आणि पुन्हा प्रयत्न करा</string>
     <string name="patcher_option_paths_clear">पथ काढून टाका आणि सुरू ठेवा</string>
-    <string name="patcher_storage_permission_hint">टीप: फाइल्स /Android/data/app.morphe.manager/files/ मध्ये हलवा - अतिरिक्त परवानग्यांची आवश्यकता नाही</string>
+    <string name="patcher_storage_permission_hint">टीप: फाइल्स /Android/data/app.maxpatcher.manager/files/ मध्ये हलवा - अतिरिक्त परवानग्यांची आवश्यकता नाही</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">तयार करत आहे</string>
     <string name="patcher_step_load_patches">पॅच लोड करत आहे</string>

@@ -663,7 +663,7 @@ Pašalinus bus visam laikui ištrinti visi programos duomenys."</string>
     <string name="patcher_option_paths_rejected_title">Lopų parinkčių failai negali būti naudojami</string>
     <string name="patcher_option_paths_rejected_description">Viena arba daugiau lopų parinkčių nurodo failus, kurie nėra rasti arba neturi reikiamų lopui duomenų. Pašalinkite keliamus Lopai be jų, arba sutvarkykite failus pagal parinkties instrukcijas ir pabandykite dar kartą</string>
     <string name="patcher_option_paths_clear">Pašalinti kelius ir tęsti</string>
-    <string name="patcher_storage_permission_hint">Patarimas: perkelkite failus į /Android/data/app.morphe.manager/files/ – jokių papildomų leidimų nereikia</string>
+    <string name="patcher_storage_permission_hint">Patarimas: perkelkite failus į /Android/data/app.maxpatcher.manager/files/ – jokių papildomų leidimų nereikia</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Ruošiama</string>
     <string name="patcher_step_load_patches">Įkeliami pataisymai</string>

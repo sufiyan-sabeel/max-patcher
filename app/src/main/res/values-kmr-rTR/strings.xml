@@ -663,7 +663,7 @@ Neqişandin dê hemî daneyên serîlêdanê bi awayê daîmî tune bike"</strin
     <string name="patcher_option_paths_rejected_title">Dosyên veçarkirina opsiyonan nabe bikaranîn</string>
     <string name="patcher_option_paths_rejected_description">Yek an zêdetir ji opsiyonên veçarkirinê berev dosyeyên winda ne yan jî tiştê ku veçarkirin daxwaz dike lê nîn e. Rêyên veçarkirinê bêyî wan jêbibe, yan jî dosyeyan wekî ku di naverên opsiyonan de hatî ravekirin çareser bike û careke din biceribîne</string>
     <string name="patcher_option_paths_clear">Rêyan jê bike û berdewam bike.</string>
-    <string name="patcher_storage_permission_hint">Îşar: Pelan biçike /Android/data/app.morphe.manager/files/ - îznayên separe zîde heta jinavê.</string>
+    <string name="patcher_storage_permission_hint">Îşar: Pelan biçike /Android/data/app.maxpatcher.manager/files/ - îznayên separe zîde heta jinavê.</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Amadekirin</string>
     <string name="patcher_step_load_patches">Bar kirina patch-an</string>

@@ -662,7 +662,7 @@
     <string name="patcher_option_paths_rejected_title">Датотеките за опции за закрпување не можат да се користат</string>
     <string name="patcher_option_paths_rejected_description">Една или повеќе опции за закрпување покажуваат кон датотеки што недостасуваат или не го содржат она што го бара закрпката. Отстранете ги патеките за да закрпите без нив, или поправете ги датотеките како што е опишано во упатствата за опцијата и обидете се повторно</string>
     <string name="patcher_option_paths_clear">Отстрани ги патеките и продолжи</string>
-    <string name="patcher_storage_permission_hint">Совет: Премести ги датотеките во /Android/data/app.morphe.manager/files/ - не се потребни дополнителни дозволи</string>
+    <string name="patcher_storage_permission_hint">Совет: Премести ги датотеките во /Android/data/app.maxpatcher.manager/files/ - не се потребни дополнителни дозволи</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Подготовка</string>
     <string name="patcher_step_load_patches">Вчитување поправки</string>

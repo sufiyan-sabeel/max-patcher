@@ -663,7 +663,7 @@ Avinstallering vil permanent slette alle appdata"</string>
     <string name="patcher_option_paths_rejected_title">Valgfiler for patching kan ikke brukes</string>
     <string name="patcher_option_paths_rejected_description">Én eller flere patch-alternativer peker til filer som mangler eller som ikke inneholder det patchen ber om. Fjern banene for å patche uten dem, eller rett filene slik instruksjonene for alternativet beskriver og prøv på nytt</string>
     <string name="patcher_option_paths_clear">Fjern stiene og fortsett.</string>
-    <string name="patcher_storage_permission_hint">Tips: Flytt filer til /Android/data/app.morphe.manager/files/ - ingen ekstra tillatelser nødvendig</string>
+    <string name="patcher_storage_permission_hint">Tips: Flytt filer til /Android/data/app.maxpatcher.manager/files/ - ingen ekstra tillatelser nødvendig</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Forbereder</string>
     <string name="patcher_step_load_patches">Laster patcher</string>

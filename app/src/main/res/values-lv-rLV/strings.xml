@@ -662,7 +662,7 @@ Deinstalējot tiks neatgriezeniski dzēsti visi lietotnes dati"</string>
     <string name="patcher_option_paths_rejected_title">Patchu opsiju failus nevar izmantot</string>
     <string name="patcher_option_paths_rejected_description">Viena vai vairākas laksta opcijas norāda uz failiem, kuri trūkst vai kuriem nav satura, ko laksts pieprasa. Noņemiet ceļus uz lakstiem bez tiem vai labojiet failus saskaņā ar opcijas norādījumiem un mēģiniet vēlreiz</string>
     <string name="patcher_option_paths_clear">Noņemt ceļus un turpināt</string>
-    <string name="patcher_storage_permission_hint">Padoms: Pārvietojiet failus uz /Android/data/app.morphe.manager/files/ - nav nepieciešamas papildu atļaujas</string>
+    <string name="patcher_storage_permission_hint">Padoms: Pārvietojiet failus uz /Android/data/app.maxpatcher.manager/files/ - nav nepieciešamas papildu atļaujas</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Sagatavošana</string>
     <string name="patcher_step_load_patches">Ielādē patchi</string>

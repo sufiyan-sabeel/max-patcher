@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">ບໍ່ສາມາດໃຊ້ໄຟລ໌ຕົວເລືອກຂອງ patch ໄດ້</string>
     <string name="patcher_option_paths_rejected_description">ຕົວເລືອກແພັດຊ໌ໜຶ່ງ ຫຼື ຫຼາຍຢ່າງຊີ້ໄປຫາໄຟລ໌ທີ່ຫາຍໄປ ຫຼື ບໍ່ມີສິ່ງທີ່ແພັດຊ໌ຕ້ອງການ. ໃຫ້ລຶບເສັ້ນທາງເພື່ອແພັດຊ໌ໂດຍບໍ່ມີພວກມັນ, ຫຼື ແກ້ໄຂໄຟລ໌ຕາມທີ່ຄຳແນະນຳຂອງຕົວເລືອກອະທິບາຍໄວ້ ແລະ ລອງອີກຄັ້ງ</string>
     <string name="patcher_option_paths_clear">ລຶບເສັ້ນທາງອອກ ແລະ ດຳເນີນການຕໍ່</string>
-    <string name="patcher_storage_permission_hint">ຄຳແນະນຳ: ຍ້າຍໄຟລ໌ໄປທີ່ /Android/data/app.morphe.manager/files/ - ບໍ່ຕ້ອງການສິດເພີ່ມເຕີມ</string>
+    <string name="patcher_storage_permission_hint">ຄຳແນະນຳ: ຍ້າຍໄຟລ໌ໄປທີ່ /Android/data/app.maxpatcher.manager/files/ - ບໍ່ຕ້ອງການສິດເພີ່ມເຕີມ</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">ກຳລັງກຽມ</string>
     <string name="patcher_step_load_patches">ກຳລັງໂຫຼດຊຸດແພດ</string>

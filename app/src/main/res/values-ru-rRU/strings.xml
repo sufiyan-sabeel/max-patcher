@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">Не удалось использовать файлы опций патча</string>
     <string name="patcher_option_paths_rejected_description">Одна или несколько опций патча указывают на файлы, которые отсутствуют или не содержат необходимых данных. Удалите пути к патчам без этих файлов, либо исправьте файлы согласно инструкциям опции и попробуйте снова</string>
     <string name="patcher_option_paths_clear">Удалить пути и продолжить</string>
-    <string name="patcher_storage_permission_hint">Совет: переместите файлы в /Android/data/app.morphe.manager/files/ - дополнительные разрешения не требуются</string>
+    <string name="patcher_storage_permission_hint">Совет: переместите файлы в /Android/data/app.maxpatcher.manager/files/ - дополнительные разрешения не требуются</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Подготовка</string>
     <string name="patcher_step_load_patches">Загрузка патчей</string>

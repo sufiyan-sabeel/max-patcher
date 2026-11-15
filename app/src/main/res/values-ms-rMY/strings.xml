@@ -664,7 +664,7 @@ Nyahpasang akan memadam semua data aplikasi secara kekal"</string>
     <string name="patcher_option_paths_rejected_title">Fail pilihan tampalan tidak boleh digunakan</string>
     <string name="patcher_option_paths_rejected_description">Satu atau lebih pilihan tampalan merujuk kepada fail yang hilang atau tidak mempunyai apa yang diperlukan oleh tampalan tersebut. Alih keluar laluan untuk menampal tanpanya, atau betulkan fail seperti yang dijelaskan dalam arahan pilihan dan cuba lagi</string>
     <string name="patcher_option_paths_clear">Alih keluar laluan dan teruskan</string>
-    <string name="patcher_storage_permission_hint">Perkongsian maklumat: Pindahkan fail-fail ke /Android/data/app.morphe.manager/files/ - tiada kebenaran tambahan diperlukan</string>
+    <string name="patcher_storage_permission_hint">Perkongsian maklumat: Pindahkan fail-fail ke /Android/data/app.maxpatcher.manager/files/ - tiada kebenaran tambahan diperlukan</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Menyediakan</string>
     <string name="patcher_step_load_patches">Memuatkan tampalan</string>

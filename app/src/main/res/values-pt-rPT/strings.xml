@@ -663,7 +663,7 @@ Desinstalar apagará permanentemente todos os dados do aplicativo."</string>
     <string name="patcher_option_paths_rejected_title">Os arquivos de opção de patch não podem ser usados</string>
     <string name="patcher_option_paths_rejected_description">Uma ou mais opções de patch apontam para arquivos que estão faltando ou não possuem o que o patch solicita. Remova os caminhos para aplicar o patch sem eles, ou corrija os arquivos conforme as instruções da opção e tente novamente</string>
     <string name="patcher_option_paths_clear">Remover os caminhos e continuar</string>
-    <string name="patcher_storage_permission_hint">Dica: Move os ficheiros para /Android/data/app.morphe.manager/files/ - não são necessárias permissões extras</string>
+    <string name="patcher_storage_permission_hint">Dica: Move os ficheiros para /Android/data/app.maxpatcher.manager/files/ - não são necessárias permissões extras</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">A preparar</string>
     <string name="patcher_step_load_patches">A carregar modificações</string>
