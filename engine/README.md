@@ -16,9 +16,9 @@ from [Morphe Patcher](https://github.com/MorpheApp/morphe-patcher) and maintaine
 
 ```bash
 git submodule update --init --recursive   # from the MAX Patcher repository root
-./engine/gradlew -p engine build
-./engine/gradlew -p engine test
-./engine/gradlew -p engine apiCheck        # fails if the public ABI moved
+./gradlew -p engine build
+./gradlew -p engine test
+./gradlew -p engine apiCheck        # fails if the public ABI moved
 ```
 
 Inside MAX Patcher the engine is an included build, so `./gradlew :app:assembleDebug` at the root

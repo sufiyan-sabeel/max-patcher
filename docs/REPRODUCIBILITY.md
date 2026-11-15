@@ -58,7 +58,7 @@ git checkout <release-commit>
 git submodule update --init --recursive
 test "$(git -C vendor/ARSCLib rev-parse HEAD)" = 50418a07a806f7fc6d8a567be81d951d6e360079
 test "$(git -C vendor/smali rev-parse HEAD)" = bbabf5f9980028daba64c19366483bbddc05cf01
-./engine/gradlew -p engine test apiCheck
+./gradlew -p engine test apiCheck
 ./gradlew :app:assembleRelease
 sha256sum app/build/outputs/apk/release/*.apk
 ```

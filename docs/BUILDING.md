@@ -27,7 +27,7 @@ Then:
 ./gradlew :app:assembleDebug     # unsigned debug build
 ./gradlew :app:assembleRelease   # needs app/keystore.jks, see below
 ./gradlew test                   # app unit tests
-./engine/gradlew -p engine test apiCheck   # engine tests and ABI check
+./gradlew -p engine test apiCheck   # engine tests and ABI check
 ```
 
 `JAVA_HOME_17_X64` and `JAVA_HOME_25_X64` are the variable names CI uses for the toolchains Gradle

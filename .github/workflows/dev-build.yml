@@ -28,6 +28,11 @@ jobs:
         with:
           submodules: recursive
 
+      # Files pushed through the GitHub API lose the executable bit, so the wrapper is invoked
+      # through bash rather than relying on its mode.
+      - name: Make the wrapper runnable
+        run: chmod +x gradlew
+
       - name: Setup Java
         uses: actions/setup-java@v6
         with:
@@ -52,13 +57,13 @@ jobs:
             || { echo "the portal-only SPDX plugin is applied again; see vendor/PINS.md"; exit 1; }
 
       - name: Unit tests
-        run: ./gradlew test --stacktrace
+        run: bash gradlew test --stacktrace
 
       - name: Engine tests and ABI check
-        run: ./engine/gradlew -p engine test apiCheck --stacktrace
+        run: bash gradlew -p engine test apiCheck --stacktrace
 
       - name: Assemble debug APK
-        run: ./gradlew :app:assembleDebug --stacktrace
+        run: bash gradlew :app:assembleDebug --stacktrace
 
       - name: Checksums
         run: |

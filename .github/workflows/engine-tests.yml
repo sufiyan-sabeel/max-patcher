@@ -26,6 +26,11 @@ jobs:
         with:
           submodules: recursive
 
+      # Files pushed through the GitHub API lose the executable bit, so the wrapper is invoked
+      # through bash rather than relying on its mode.
+      - name: Make the wrapper runnable
+        run: chmod +x gradlew
+
       - name: Setup Java
         uses: actions/setup-java@v6
         with:
@@ -36,10 +41,10 @@ jobs:
         uses: burrunan/gradle-cache-action@v3
 
       - name: Test
-        run: ./engine/gradlew -p engine test --stacktrace
+        run: bash gradlew -p engine test --stacktrace
 
       - name: Public ABI check
-        run: ./engine/gradlew -p engine apiCheck --stacktrace
+        run: bash gradlew -p engine apiCheck --stacktrace
 
       - name: Test report
         if: always()

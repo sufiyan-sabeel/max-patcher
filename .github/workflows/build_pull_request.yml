@@ -44,6 +44,11 @@ jobs:
           echo "${{ secrets.KEYSTORE_B64 }}" | base64 -d > app/keystore.jks
           ls -la app/keystore.jks
 
+      # Files pushed through the GitHub API lose the executable bit, so the wrapper is invoked
+      # through bash rather than relying on its mode.
+      - name: Make the wrapper runnable
+        run: chmod +x gradlew
+
       - name: Setup Java
         uses: actions/setup-java@v6
         with:
@@ -75,7 +80,7 @@ jobs:
           _JAVA_OPTIONS: "-Djava.awt.headless=true"
         run: |
           chmod +x ./gradlew
-          ./gradlew :app:testDebugUnitTest --stacktrace
+          bash gradlew :app:testDebugUnitTest --stacktrace
 
       # lintVital is disabled in the app build script, so release builds run no
       # checks of their own; this step is the only place lint gates a change
@@ -85,7 +90,7 @@ jobs:
           _JAVA_OPTIONS: "-Djava.awt.headless=true"
         run: |
           chmod +x ./gradlew
-          ./gradlew :app:lint --stacktrace
+          bash gradlew :app:lint --stacktrace
 
       - name: Build APK
         env:
@@ -96,7 +101,7 @@ jobs:
           _JAVA_OPTIONS: "-Djava.awt.headless=true"
         run: |
           chmod +x ./gradlew
-          ./gradlew ${{ steps.fork_check.outputs.gradle_task }} --stacktrace
+          bash gradlew ${{ steps.fork_check.outputs.gradle_task }} --stacktrace
 
       - name: Rename APK
         run: |
