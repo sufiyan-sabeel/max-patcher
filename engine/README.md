@@ -4,7 +4,7 @@ The patching engine behind [MAX Patcher](https://github.com/sufiyan-sabeel/max-p
 from [Morphe Patcher](https://github.com/MorpheApp/morphe-patcher) and maintained independently.
 
 - **Version 0.1.0.** Versioned separately from MAX Patcher and MAX Patches; see `gradle.properties`.
-- **Same API.** The public surface is pinned by `api/morphe-patcher.api` and checked by the binary
+- **Same API.** The public surface is pinned by `api/max-engine.api` and checked by the binary
   compatibility validator. Nothing in a patch bundle compiled against Morphe Patcher 2.3.0 needs to
   change.
 - **Built from source.** ARSCLib and smali are vendored submodules pinned to exact commits

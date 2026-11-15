@@ -12,7 +12,14 @@ reason, and at this stage there is none.
 | Version `0.1.0`, independent of the app | three separately versioned artifacts, as specified | none — bundles declare a minimum patcher version, and 0.1.0 sorts below 2.3.0, so a bundle requiring 2.3.0 is rejected. See "Version numbering" below |
 | ARSCLib and smali resolved from vendored submodules | removes JitPack and the authenticated registry from the build | none |
 | Consumed as an included build by MAX Patcher | the app stops downloading the patcher from GitHub Packages | none |
-| `api/morphe-patcher.api` carried over unchanged | the ABI contract is explicit and diffable | none |
+| `api/max-engine.api` carried over unchanged (byte-identical to upstream's `morphe-patcher.api`) | the ABI contract is explicit and diffable | none |
+
+### Why the ABI dump is called `max-engine.api`
+
+The binary-compatibility validator names the dump after the Gradle project, so renaming the project to
+`max-engine` made `apiCheck` expect `api/max-engine.api`. The file was renamed; its **contents** are
+byte-identical to upstream's `morphe-patcher.api` at 2.3.0, which is what "the ABI is unchanged"
+means and how it can be checked with `diff`.
 
 ## What is deliberately unchanged
 
@@ -30,7 +37,7 @@ not a number picked to slip past a check:
 
 - Every patch bundle declares `Patcher-Version` in its manifest, and the manager refuses a bundle that
   needs a newer patcher than the one it carries (`isPatcherOutdated`).
-- MAX Engine's public ABI is byte-for-byte upstream 2.3.0's: `api/morphe-patcher.api` is unchanged,
+- MAX Engine's public ABI is byte-for-byte upstream 2.3.0's: `api/max-engine.api` is byte-identical to upstream's dump,
   and `apiCheck` fails if it ever moves.
 - A bundle built for 2.3.0 therefore *does* run here, and semver says an API-compatible change is a
   patch bump. `0.1.0` would have rejected every inherited bundle on a technicality.
@@ -57,4 +64,4 @@ environment where this fork was prepared. They are written to run, not known to 
 ## Rules for changing the engine
 
 Every future engine change carries: the root cause, the code change, a regression test, a
-compatibility assessment against `api/morphe-patcher.api`, and a line in this document.
+compatibility assessment against `api/max-engine.api`, and a line in this document.

@@ -40,6 +40,6 @@ See [Setting up a development environment](docs/2_1_setup.md) for details.
 - Build: `./gradlew build`
 - Run the tests: `./gradlew test`
 - If you change the public API, update the API dump with `./gradlew apiDump` and commit the changed
-  [api/morphe-patcher.api](api/morphe-patcher.api). The build fails with `apiCheck` if the dump is out of date.
+  [api/max-engine.api](api/max-engine.api). The build fails with `apiCheck` if the dump is out of date.
 
 ❤️ Thank you for considering contributing to Morphe Patcher.
