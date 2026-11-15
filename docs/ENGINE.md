@@ -39,6 +39,10 @@ ABI assessment (`apiCheck`) and a documentation update.
 
 ## Version skew
 
-MAX Engine 0.1.0 sorts below the 2.3.0 that upstream bundles declare, so a MAX Patches bundle must
-declare a minimum patcher version of 0.1.0 or lower, or the manager will refuse the source. That
-constraint is spelled out in `engine/docs/MAX_ENGINE.md`.
+MAX Engine carries **2.3.1**, continuing upstream's line rather than restarting at 0.1.0, because
+patch bundles declare a minimum patcher version and the manager enforces it. The ABI is identical to
+upstream 2.3.0, so inherited bundles run unchanged. Reasoning and the test that pins it:
+`engine/docs/MAX_ENGINE.md` and `engine/src/test/kotlin/.../EngineVersionCompatibilityTest.kt`.
+
+The app reports the engine's version by reading `engine/gradle.properties` at build time, so the two
+cannot drift apart silently.
