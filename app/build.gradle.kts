@@ -1,4 +1,5 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
+import java.util.Properties
 import org.gradle.api.tasks.testing.logging.TestLogEvent
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import kotlin.random.Random
@@ -238,7 +239,10 @@ val embeddedJvmAssets = tasks.register<EmbeddedJvmAssetsTask>("embeddedJvmAssets
 val engineVersion: String = run {
     val file = rootProject.file("engine/gradle.properties")
     check(file.isFile) { "engine/gradle.properties is missing; the engine is an included build" }
-    val properties = java.util.Properties().apply { file.inputStream().use(::load) }
+    // java.util.Properties() does not resolve here: `java` is the Java plugin's extension in a
+    // Kotlin build script, so the class is imported at the top of this file instead.
+    val properties = Properties()
+    file.inputStream().use { properties.load(it) }
     val version = properties.getProperty("version")
     check(!version.isNullOrBlank()) { "engine/gradle.properties has no version" }
     version
