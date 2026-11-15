@@ -72,6 +72,35 @@ jobs:
           cd app/build/outputs/apk/debug
           sha256sum *.apk | tee SHA256SUMS.txt
 
+      - name: Verify the APK signature
+        run: |
+          # A debug build is signed with the debug keystore; what matters here is that it is
+          # signed at all and that the certificate is readable, so a release build's signing
+          # problem cannot hide behind a passing debug build.
+          BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
+          "$BT/apksigner" verify --print-certs app/build/outputs/apk/debug/*.apk | tee apk-signature.txt
+          grep -q "Signer #1 certificate SHA-256 digest" apk-signature.txt \
+            || { echo "apksigner reported no signer"; exit 1; }
+
+      - name: Dependency and licence inventory
+        run: |
+          # What the APK is built from and under which licences. The licensee plugin writes the
+          # report at build time; it is the same list the in-app licence screen shows.
+          bash gradlew :app:licensee --stacktrace
+          python3 .github/scripts/licence_inventory.py
+
+      - name: SBOM for the APK
+        uses: anchore/sbom-action@v0
+        with:
+          # Generated from the built APK, not from the Gradle graph: it describes what actually
+          # shipped, including the embedded JREs.
+          file: app/build/outputs/apk/debug/max-patcher-0.1.0-debug.apk
+          format: spdx-json
+          output-file: max-patcher-0.1.0-debug.spdx.json
+          artifact-name: max-patcher-sbom
+          upload-artifact: true
+          upload-release-assets: false
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
@@ -79,6 +108,8 @@ jobs:
           path: |
             app/build/outputs/apk/debug/*.apk
             app/build/outputs/apk/debug/SHA256SUMS.txt
+            apk-signature.txt
+            licence-inventory.txt
           if-no-files-found: error
           retention-days: 14
 

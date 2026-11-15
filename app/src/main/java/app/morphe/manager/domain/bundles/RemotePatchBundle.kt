@@ -294,7 +294,7 @@ sealed class RemotePatchBundle(
             } ?: return null
 
             return buildString {
-                append("$PROJECT_WEBSITE_URL$ADD_SOURCE_PATH?$provider=${segments[0]}/${segments[1]}")
+                append("$ADD_SOURCE_BASE_URL$ADD_SOURCE_PATH?$provider=${segments[0]}/${segments[1]}")
                 name?.takeIf { it.isNotBlank() }?.let {
                     append("&name=").append(URLEncoder.encode(it, "UTF-8").replace("+", "%20"))
                 }

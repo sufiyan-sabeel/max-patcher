@@ -45,8 +45,17 @@ const val PROJECT_WEBSITE_URL = "https://github.com/sufiyan-sabeel/max-patcher"
 const val COMMUNITY_PATCHES_URL = "https://github.com/sufiyan-sabeel/max-patcher-docs"
 const val BLOCKED_SOURCES_URL = "$API_BASE_URL/v2/blocked-sources"
 
-/** Website page behind add-source links: ?github|gitlab=owner/repo(&name=...) */
-const val ADD_SOURCE_PATH = "/add-source"
+/**
+ * Base of the page behind add-source links, which MAX hosts as a static page in the docs
+ * repository (GitHub Pages). Upstream served this from its own website.
+ */
+const val ADD_SOURCE_BASE_URL = "https://sufiyan-sabeel.github.io/max-patcher-docs"
+
+/** The add-source page itself: ?github|gitlab=owner/repo(&name=...) */
+const val ADD_SOURCE_PATH = "/add-source.html"
+
+/** Host of [ADD_SOURCE_BASE_URL], which the deep-link check compares against. */
+const val ADD_SOURCE_HOST = "sufiyan-sabeel.github.io"
 
 /** What a source link looks like, shown in a field waiting for one. */
 const val REMOTE_URL_PLACEHOLDER = "github.com/owner/repo"

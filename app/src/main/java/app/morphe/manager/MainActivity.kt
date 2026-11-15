@@ -207,9 +207,12 @@ class MainActivity : ComponentActivity() {
     }
 
     /**
-     * Handles add-source deep links from an explicit-package `intent://` fired by the website.
-     * Format: https://morphe.software/add-source?<github|gitlab>=owner/repo(&name=…)(&app=package&appName=…)
+     * Handles add-source deep links from an explicit-package `intent://` fired by the add-source page.
+     * Format: https://<host>/add-source(.html)?<github|gitlab>=owner/repo(&name=…)(&app=package&appName=…)
      * Only GitHub and GitLab URLs are accepted.
+     *
+     * Both hosts are accepted: MAX's own page, and the upstream one, because links already shared
+     * in the wild point at it and the query is identical.
      */
     private fun handleDeepLinkIntent(intent: Intent?, vm: MainViewModel) {
         reportShortcutUsage(intent)
@@ -305,7 +308,7 @@ class MainActivity : ComponentActivity() {
         }
 
         val isAddSource = data.scheme == "https" &&
-                data.host == "morphe.software" &&
+                (data.host == "morphe.software" || data.host == ADD_SOURCE_HOST) &&
                 data.path?.startsWith(ADD_SOURCE_PATH) == true
         if (!isAddSource) return
 

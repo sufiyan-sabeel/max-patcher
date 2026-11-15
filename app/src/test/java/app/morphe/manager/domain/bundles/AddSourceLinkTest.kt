@@ -6,8 +6,8 @@
 package app.morphe.manager.domain.bundles
 
 import app.morphe.manager.domain.bundles.RemotePatchBundle.Companion.addSourceLinkForEndpoint
+import app.morphe.manager.util.ADD_SOURCE_BASE_URL
 import app.morphe.manager.util.ADD_SOURCE_PATH
-import app.morphe.manager.util.PROJECT_WEBSITE_URL
 import kotlin.test.*
 
 /**
@@ -23,7 +23,7 @@ class AddSourceLinkTest {
      * MAX has no `/add-source` page yet, so a link generated today leads nowhere. The link format is
      * kept because the app still accepts these links and the page is a matter of publishing one.
      */
-    private val base = PROJECT_WEBSITE_URL + ADD_SOURCE_PATH
+    private val base = ADD_SOURCE_BASE_URL + ADD_SOURCE_PATH
 
     @Test
     fun `github root bundle on stable branch is shared`() {
