@@ -664,7 +664,7 @@ A desinstalación borrará permanentemente todos os datos da aplicación"</strin
     <string name="patcher_option_paths_rejected_title">Non se poden usar os ficheiros de opcións do parche</string>
     <string name="patcher_option_paths_rejected_description">Un ou máis opcións do parche apuntan a ficheiros que faltan ou que non teñen o que o parche solicita. Elimina as rutas para parchear sen eles, ou correxe os ficheiros segundo describen as instrucións da opción e tenta de novo</string>
     <string name="patcher_option_paths_clear">Eliminar as rutas e continuar</string>
-    <string name="patcher_storage_permission_hint">Consello: Move os ficheiros a /Android/data/app.morphe.manager/files/ - non se necesitan permisos adicionais</string>
+    <string name="patcher_storage_permission_hint">Consello: Move os ficheiros a /Android/data/app.maxpatcher.manager/files/ - non se necesitan permisos adicionais</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Preparando</string>
     <string name="patcher_step_load_patches">Cargando parches</string>

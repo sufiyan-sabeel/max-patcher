@@ -663,7 +663,7 @@ Ang pag-uninstall ay permanenteng bubura sa lahat ng data ng app."</string>
     <string name="patcher_option_paths_rejected_title">Hindi maaaring gamitin ang mga patch option file</string>
     <string name="patcher_option_paths_rejected_description">Ang isa o higit pang mga patch option ay tumuturo sa mga file na nawawala o walang hinihingi ang patch. Alisin ang mga path upang mag-patch nang wala ang mga ito, o ayusin ang mga file ayon sa inilalarawan ng mga tagubilin sa option at subukan muli</string>
     <string name="patcher_option_paths_clear">Alisin ang mga path at magpatuloy.</string>
-    <string name="patcher_storage_permission_hint">Pahiwatig: Ilipat ang mga file sa /Android/data/app.morphe.manager/files/ - hindi na kailangan ng karagdagang mga pahintulot</string>
+    <string name="patcher_storage_permission_hint">Pahiwatig: Ilipat ang mga file sa /Android/data/app.maxpatcher.manager/files/ - hindi na kailangan ng karagdagang mga pahintulot</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Inihahanda</string>
     <string name="patcher_step_load_patches">Inilo-load ang mga patch</string>

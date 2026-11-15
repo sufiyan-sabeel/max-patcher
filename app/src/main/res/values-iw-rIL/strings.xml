@@ -664,7 +664,7 @@
     <string name="patcher_option_paths_rejected_title">לא ניתן להשתמש בקובצי אפשרויות תיקון</string>
     <string name="patcher_option_paths_rejected_description">אפשרות תיקון אחת או יותר מפנות לקבצים חסרים או לקבצים שאינם מכילים את מה שהתיקון דורש. הסר את הנתיבים כדי לבצע תיקון בלעדיהם, או תקן את הקבצים לפי הוראות האפשרות ונסה שוב</string>
     <string name="patcher_option_paths_clear">הסר את הנתיבים והמשך</string>
-    <string name="patcher_storage_permission_hint">עצה: העבר קבצים ל- /Android/data/app.morphe.manager/files/ - אין צורך ברשאות נוספות</string>
+    <string name="patcher_storage_permission_hint">עצה: העבר קבצים ל- /Android/data/app.maxpatcher.manager/files/ - אין צורך ברשאות נוספות</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">מכין</string>
     <string name="patcher_step_load_patches">טוען תיקונים</string>

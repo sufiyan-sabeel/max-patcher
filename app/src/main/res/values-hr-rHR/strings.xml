@@ -666,7 +666,7 @@ Deinstaliranje će trajno izbrisati sve podatke aplikacije"</string>
     <string name="patcher_option_paths_rejected_title">Datoteke opcija patchanja se ne mogu koristiti</string>
     <string name="patcher_option_paths_rejected_description">Jedna ili više opcija patchanja upućuju na datoteke koje nedostaju ili nemaju ono što patch zahtijeva. Uklonite putanje kako biste patchali bez njih, ili popravite datoteke prema uputama u opcijama i pokušajte ponovno</string>
     <string name="patcher_option_paths_clear">Uklonite putanje i nastavite</string>
-    <string name="patcher_storage_permission_hint">Savjet: Premjestite datoteke u /Android/data/app.morphe.manager/files/ - nisu potrebna dodatna dopuštenja</string>
+    <string name="patcher_storage_permission_hint">Savjet: Premjestite datoteke u /Android/data/app.maxpatcher.manager/files/ - nisu potrebna dodatna dopuštenja</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Priprema</string>
     <string name="patcher_step_load_patches">Učitavanje patcheva</string>

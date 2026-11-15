@@ -663,7 +663,7 @@ Afnaman eyðir varanlega öllum forritsgögnum"</string>
     <string name="patcher_option_paths_rejected_title">Hægt er ekki að nota valskrár fyrir váð</string>
     <string name="patcher_option_paths_rejected_description">Ein eða fleiri valkostir fyrir váð vísa til skráa sem vantar eða innihalda ekki það sem váðið krefst. Fjarlæg slíkar leiðir til að váða án þeirra, eða leiðréttu skránar eins og lýst er í leiðbeiningum valkostsins og reyndu aftur</string>
     <string name="patcher_option_paths_clear">Fjarlægja slóðirnar og halda áfram</string>
-    <string name="patcher_storage_permission_hint">Ábending: Hreyfðu skráar til /Android/data/app.morphe.manager/files/ - þurfir ekki auka heimildir</string>
+    <string name="patcher_storage_permission_hint">Ábending: Hreyfðu skráar til /Android/data/app.maxpatcher.manager/files/ - þurfir ekki auka heimildir</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Búðu</string>
     <string name="patcher_step_load_patches">Hlaða breytistillingar</string>

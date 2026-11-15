@@ -663,7 +663,7 @@ La disinstallazione cancellerà definitivamente tutti i dati dell'app."</string>
     <string name="patcher_option_paths_rejected_title">I file delle opzioni di modifica non possono essere utilizzati</string>
     <string name="patcher_option_paths_rejected_description">Una o più opzioni di modifica puntano a file mancanti o che non contengono quanto richiesto dalla modifica. Rimuovi i percorsi per procedere senza di essi, oppure correggi i file come descritto nelle istruzioni dell\'opzione e riprova</string>
     <string name="patcher_option_paths_clear">Rimuovi i percorsi e continua</string>
-    <string name="patcher_storage_permission_hint">Suggerimento: sposta i file in /Android/data/app.morphe.manager/files/ - non sono necessarie autorizzazioni extra</string>
+    <string name="patcher_storage_permission_hint">Suggerimento: sposta i file in /Android/data/app.maxpatcher.manager/files/ - non sono necessarie autorizzazioni extra</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Preparazione</string>
     <string name="patcher_step_load_patches">Caricamento delle patch</string>

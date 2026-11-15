@@ -663,7 +663,7 @@ Scriosfaidh díshuiteáil gach sonraí aip go buan."</string>
     <string name="patcher_option_paths_rejected_title">Ní féidir comhaid roghanna paiste a úsáid</string>
     <string name="patcher_option_paths_rejected_description">Tá rogha paiste amháin nó níos mó ag tagairt do chomhaid atá ar iarraidh, nó nach bhfuil an t-ábhar iontu a éilíonn an paiste. Bain na cosáin chuig na paistí sin, nó ceartaigh na comhaid de réir threoracha na rogha agus bain triail as arís.</string>
     <string name="patcher_option_paths_clear">Bain na cosáin agus lean ar aghaidh</string>
-    <string name="patcher_storage_permission_hint">Leid: Bog comhaid go /Android/data/app.morphe.manager/files/ - níl aon cheadanna breise ag teastáil</string>
+    <string name="patcher_storage_permission_hint">Leid: Bog comhaid go /Android/data/app.maxpatcher.manager/files/ - níl aon cheadanna breise ag teastáil</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Ag ullmhú</string>
     <string name="patcher_step_load_patches">Paistí á lódáil</string>

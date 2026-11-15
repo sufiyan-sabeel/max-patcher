@@ -663,7 +663,7 @@ Az eltávolítás véglegesen törli az alkalmazás összes adatát."</string>
     <string name="patcher_option_paths_rejected_title">A javítás opciófájljai nem használhatók</string>
     <string name="patcher_option_paths_rejected_description">Egy vagy több javítási opció olyan fájlra mutat, amely hiányzik, vagy nem tartalmazza a javításhoz szükséges adatokat. Távolítsa el azokat az útvonalakat, amelyek nélkül is lefuttatható a javítás, vagy javítsa a fájlokat az opció utasításai szerint, majd próbálja újra</string>
     <string name="patcher_option_paths_clear">Távolítsa el az útvonalakat, és folytassa.</string>
-    <string name="patcher_storage_permission_hint">Tipp: Mozgasd át a fájlokat az /Android/data/app.morphe.manager/files/ könyvtárba - nincs szükség extra engedélyekre</string>
+    <string name="patcher_storage_permission_hint">Tipp: Mozgasd át a fájlokat az /Android/data/app.maxpatcher.manager/files/ könyvtárba - nincs szükség extra engedélyekre</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Előkészítés</string>
     <string name="patcher_step_load_patches">Módosítások betöltése</string>

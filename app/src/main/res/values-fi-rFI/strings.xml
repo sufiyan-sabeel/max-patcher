@@ -663,7 +663,7 @@ Poistaminen poistaa pysyvästi kaikki sovelluksen tiedot."</string>
     <string name="patcher_option_paths_rejected_title">Paikkausvaihtoehtojen tiedostoja ei voida käyttää</string>
     <string name="patcher_option_paths_rejected_description">Yksi tai useampi paikkausvaihtoehto viittaa tiedostoihin, jotka puuttuvat tai joista puuttuu paikkauksen vaatima sisältö. Poista polut ja paikkaa ilman niitä, tai korjaa tiedostot vaihtoehdon ohjeiden mukaisesti ja yritä uudelleen</string>
     <string name="patcher_option_paths_clear">Poista polut ja jatka</string>
-    <string name="patcher_storage_permission_hint">Vinkki: Siirrä tiedostot /Android/data/app.morphe.manager/files/ – ei tarvita ylimääräisiä lupia</string>
+    <string name="patcher_storage_permission_hint">Vinkki: Siirrä tiedostot /Android/data/app.maxpatcher.manager/files/ – ei tarvita ylimääräisiä lupia</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Valmistellaan</string>
     <string name="patcher_step_load_patches">Ladataan lisäosia</string>

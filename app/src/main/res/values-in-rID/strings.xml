@@ -663,7 +663,7 @@ Mencopot akan menghapus semua data aplikasi secara permanen"</string>
     <string name="patcher_option_paths_rejected_title">Berkas opsi tambalan tidak dapat digunakan</string>
     <string name="patcher_option_paths_rejected_description">Satu atau lebih opsi tambalan mengarah ke berkas yang hilang atau tidak memiliki apa yang diminta oleh tambalan. Hapus jalur untuk melakukan tambalan tanpanya, atau perbaiki berkas sesuai deskripsi instruksi opsi dan coba lagi</string>
     <string name="patcher_option_paths_clear">Hapus jalur dan lanjutkan</string>
-    <string name="patcher_storage_permission_hint">Saran: Pindahkan berkas ke /Android/data/app.morphe.manager/files/ - tidak diperlukan perizinan tambahan</string>
+    <string name="patcher_storage_permission_hint">Saran: Pindahkan berkas ke /Android/data/app.maxpatcher.manager/files/ - tidak diperlukan perizinan tambahan</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Mempersiapkan</string>
     <string name="patcher_step_load_patches">Memuat tambalan</string>

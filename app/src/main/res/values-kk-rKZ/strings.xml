@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">Патч опцияларының файлдарын қолдану мүмкін емес</string>
     <string name="patcher_option_paths_rejected_description">Бір немесе бірнеше патч опциясы жоқ файлдарға немесе патч талап ететін деректер жоқ файлдарға сілтеме жасайды. Оларсыз патч жасау үшін жолдарды жойыңыз немесе файлдарды опция нұсқаулығында сипатталғандай түзетіп, қайтадан көріңіз</string>
     <string name="patcher_option_paths_clear">Жолдарды жойып, жалғастыру</string>
-    <string name="patcher_storage_permission_hint">Кеңес: Файлдарды /Android/data/app.morphe.manager/files/ жолына көшіріңіз - қосымша рұқсаттар қажет емес</string>
+    <string name="patcher_storage_permission_hint">Кеңес: Файлдарды /Android/data/app.maxpatcher.manager/files/ жолына көшіріңіз - қосымша рұқсаттар қажет емес</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Дайындалуда</string>
     <string name="patcher_step_load_patches">Патчтер жүктелуде</string>

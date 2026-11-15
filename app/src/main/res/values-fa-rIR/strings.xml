@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">فایل‌های گزینهٔ پچ نمی‌توانند مورد استفاده قرار گیرند</string>
     <string name="patcher_option_paths_rejected_description">یک یا چند گزینهٔ پچ به فایل‌هایی اشاره می‌کنند که وجود ندارند یا آنچه را که پچ درخواست می‌کند ندارند. برای پچ کردن بدون آن‌ها مسیرها را حذف کنید، یا فایل‌ها را مطابق دستورالعمل‌های گزینه اصلاح کرده و دوباره تلاش کنید</string>
     <string name="patcher_option_paths_clear">حذف مسیرها و ادامه</string>
-    <string name="patcher_storage_permission_hint">نکته: فایل‌ها را به /Android/data/app.morphe.manager/files/ منتقل کنید؛ مجوز اضافی لازم نیست</string>
+    <string name="patcher_storage_permission_hint">نکته: فایل‌ها را به /Android/data/app.maxpatcher.manager/files/ منتقل کنید؛ مجوز اضافی لازم نیست</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">در حال آماده‌سازی</string>
     <string name="patcher_step_load_patches">در حال بارگذاری پچ‌ها</string>

@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">पैच विकल्प फ़ाइलों का उपयोग नहीं किया जा सकता</string>
     <string name="patcher_option_paths_rejected_description">एक या अधिक पैच विकल्प उन फ़ाइलों की ओर इशारा करते हैं जो गायब हैं या जिनमें वह नहीं है जिसकी पैच मांग करता है। उनके बिना पैच करने के लिए पथ हटा दें, या विकल्प निर्देशों के अनुसार फ़ाइलों को ठीक करें और पुनः प्रयास करें</string>
     <string name="patcher_option_paths_clear">पथ हटाएँ और जारी रखें</string>
-    <string name="patcher_storage_permission_hint">टिप: फ़ाइलें /Android/data/app.morphe.manager/files/ में स्थानांतरित करें - अतिरिक्त पर्मिशन की आवश्यकता नहीं है</string>
+    <string name="patcher_storage_permission_hint">टिप: फ़ाइलें /Android/data/app.maxpatcher.manager/files/ में स्थानांतरित करें - अतिरिक्त पर्मिशन की आवश्यकता नहीं है</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">तैयार कर रहे हैं...</string>
     <string name="patcher_step_load_patches">पैच लोड हो रहे हैं</string>

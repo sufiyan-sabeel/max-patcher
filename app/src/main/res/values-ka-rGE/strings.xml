@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">ფაილების პატჩის ოფციების გამოყენება შეუძლებელია</string>
     <string name="patcher_option_paths_rejected_description">ერთი ან რამდენიმე პატჩის ოფცია მიუთითებს ფაილებზე, რომლებიც დაკარგულია ან არ შეიცავს იმას, რასაც პატჩი მოითხოვს. წაშალეთ გზები, რათა პატჩის დაყენება მათ გარეშე მოხდეს, ან გამოასწორეთ ფაილები ოფციების ინსტრუქციების შესაბამისად და სცადეთ ხელახლა</string>
     <string name="patcher_option_paths_clear">წაშალეთ გზები და გააგრძელეთ</string>
-    <string name="patcher_storage_permission_hint">რჩევა: გადაიტანეთ ფაილები /Android/data/app.morphe.manager/files/ - დამატებითი ნებართვები აღარ იქნება საჭირო</string>
+    <string name="patcher_storage_permission_hint">რჩევა: გადაიტანეთ ფაილები /Android/data/app.maxpatcher.manager/files/ - დამატებითი ნებართვები აღარ იქნება საჭირო</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">მზადდება</string>
     <string name="patcher_step_load_patches">პატჩების ჩატვირთვა</string>

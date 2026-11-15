@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">Փաթեթի տարբերակի ֆայլերը չեն կարող օգտագործվել</string>
     <string name="patcher_option_paths_rejected_description">Մեկ կամ մի քանի փաթեթի տարբերակներ հղվում են ֆայլերի, որոնք բացակայում են կամ չունեն այն, ինչ պահանջում է փաթեթը: Հեռացրեք այդ ուղիները, որպեսզի փաթեթավորումը կատարվի առանց դրանց, կամ ուղղեք ֆայլերը՝ ըստ տարբերակի հրահանգների, և փորձեք նորից</string>
     <string name="patcher_option_paths_clear">Հեռացնել ուղիները և շարունակել</string>
-    <string name="patcher_storage_permission_hint">Հուշում. Տեղափոխեք ֆայլերը /Android/data/app.morphe.manager/files/ թղթապանակ՝ լրացուցիչ թույլտվությունների կարիք չունենալու համար</string>
+    <string name="patcher_storage_permission_hint">Հուշում. Տեղափոխեք ֆայլերը /Android/data/app.maxpatcher.manager/files/ թղթապանակ՝ լրացուցիչ թույլտվությունների կարիք չունենալու համար</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Նախապատրաստում</string>
     <string name="patcher_step_load_patches">Բեռնում փոփոխությունները</string>

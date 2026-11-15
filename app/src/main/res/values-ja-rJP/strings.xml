@@ -663,7 +663,7 @@ APK ファイルの取得元を選択してください"</string>
     <string name="patcher_option_paths_rejected_title">パッチ設定ファイルを使用できません</string>
     <string name="patcher_option_paths_rejected_description">1 つ以上のパッチ オプションで指定されているファイルが存在しないか、パッチの適用に必要な内容が含まれていません。該当するファイルへのパスを削除するか、オプションの説明に従ってファイルを修正してから、もう一度お試しください</string>
     <string name="patcher_option_paths_clear">パスを削除して続行</string>
-    <string name="patcher_storage_permission_hint">ヒント: ファイルを /Android/data/app.morphe.manager/files/ に移動すれば、追加の権限は必要ありません</string>
+    <string name="patcher_storage_permission_hint">ヒント: ファイルを /Android/data/app.maxpatcher.manager/files/ に移動すれば、追加の権限は必要ありません</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">準備中</string>
     <string name="patcher_step_load_patches">パッチを読み込み中</string>

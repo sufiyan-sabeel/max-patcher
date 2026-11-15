@@ -663,7 +663,7 @@ Instalazioa kendupean aplikazioaren datu guztiak betiko ezabatuko dira"</string>
     <string name="patcher_option_paths_rejected_title">Patch aukerak fitxategiak ezin dira erabili</string>
     <string name="patcher_option_paths_rejected_description">Patch aukera bat edo bat gehiagok falta diren fitxategietara zuzentzen dira, edo patch-ek eskatzen duena ez dute. Kendu bideak haiek gabe patch egiteko, edo konpondu fitxategiak aukerak instrukzioek deskribatzen duten moduan eta saiatu berriro</string>
     <string name="patcher_option_paths_clear">Kendu bideak eta jarraitu</string>
-    <string name="patcher_storage_permission_hint">Goeta: Mugitu fitxategiak /Android/data/app.morphe.manager/files/ bideera - baimen gehiarkoik ez dira behar</string>
+    <string name="patcher_storage_permission_hint">Goeta: Mugitu fitxategiak /Android/data/app.maxpatcher.manager/files/ bideera - baimen gehiarkoik ez dira behar</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Preparatzen</string>
     <string name="patcher_step_load_patches">Patch-ak kargatzen</string>
