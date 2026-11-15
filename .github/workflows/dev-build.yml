@@ -53,7 +53,9 @@ jobs:
           # vendor/smali is vendored source at bbabf5f9 with the SPDX plugin removed; its presence
           # and the absence of the plugin are what matter, not a git object.
           test -f vendor/smali/dexlib2/build.gradle || { echo "vendor/smali is missing"; exit 1; }
-          ! grep -q 'id("org.spdx.sbom")' vendor/smali/dexlib2/build.gradle \
+          # Only an uncommented application counts: the restore instructions in that file mention
+          # the plugin id, and a plain grep matched them and failed this check on its first run.
+          ! grep -qE '^[[:space:]]*id\("org\.spdx\.sbom"\)' vendor/smali/dexlib2/build.gradle \
             || { echo "the portal-only SPDX plugin is applied again; see vendor/PINS.md"; exit 1; }
 
       - name: Unit tests
