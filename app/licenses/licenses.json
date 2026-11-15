@@ -36,7 +36,9 @@
       "licenses": [
         "GPL-3.0-only"
       ],
-      "text": "NOTICE.txt"
+      "text": "NOTICE.txt",
+      "source": "NOTICE",
+      "description": "The app's own notice. The licensee plugin copies the repository NOTICE into the APK as NOTICE.txt, so it is referenced rather than duplicated."
     },
     {
       "name": "OpenJDK",
