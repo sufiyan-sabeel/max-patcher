@@ -79,7 +79,10 @@ jobs:
           # problem cannot hide behind a passing debug build.
           BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
           "$BT/apksigner" verify --print-certs app/build/outputs/apk/debug/*.apk | tee apk-signature.txt
-          grep -q "Signer #1 certificate SHA-256 digest" apk-signature.txt \
+          # apksigner labels the scheme that signed: "V2 Signer:" / "V3 Signer:" when the APK uses
+          # only the modern schemes, "Signer #1:" when it also carries a v1 JAR signature. Match the
+          # digest line, not the label, or a v2-only APK reads as unsigned.
+          grep -q "certificate SHA-256 digest" apk-signature.txt \
             || { echo "apksigner reported no signer"; exit 1; }
 
       - name: Dependency and licence inventory
