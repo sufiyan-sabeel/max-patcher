@@ -40,13 +40,16 @@ jobs:
       - name: Cache Gradle
         uses: burrunan/gradle-cache-action@v3
 
-      - name: Verify submodule pins
+      - name: Verify dependency pins
         run: |
           # The build must use exactly the commits recorded in vendor/PINS.md.
-          test "$(git -C vendor/ARSCLib rev-parse HEAD)" = "50418a07a806f7fc6d8a567be81d951d6e360079" \
+          test "$(git -C vendor/ARSCLib rev-parse HEAD)" = "675bed2de397097400ba6f0c808e28005ae5aa53" \
             || { echo "vendor/ARSCLib is not at its pinned commit"; exit 1; }
-          test "$(git -C vendor/smali rev-parse HEAD)" = "bbabf5f9980028daba64c19366483bbddc05cf01" \
-            || { echo "vendor/smali is not at its pinned commit"; exit 1; }
+          # vendor/smali is vendored source at bbabf5f9 with the SPDX plugin removed; its presence
+          # and the absence of the plugin are what matter, not a git object.
+          test -f vendor/smali/dexlib2/build.gradle || { echo "vendor/smali is missing"; exit 1; }
+          ! grep -q 'id("org.spdx.sbom")' vendor/smali/dexlib2/build.gradle \
+            || { echo "the portal-only SPDX plugin is applied again; see vendor/PINS.md"; exit 1; }
 
       - name: Unit tests
         run: ./gradlew test --stacktrace

@@ -232,6 +232,18 @@ val embeddedJvmAssets = tasks.register<EmbeddedJvmAssetsTask>("embeddedJvmAssets
     outputDirectory.set(layout.buildDirectory.dir("generated/embeddedJvm"))
 }
 
+// The engine is an included build with its own version line, so the app reads its version from
+// the engine's own gradle.properties. Failing here is better than shipping an app that claims to
+// carry a patcher version it does not have.
+val engineVersion: String = run {
+    val file = rootProject.file("engine/gradle.properties")
+    check(file.isFile) { "engine/gradle.properties is missing; the engine is an included build" }
+    val properties = java.util.Properties().apply { file.inputStream().use(::load) }
+    val version = properties.getProperty("version")
+    check(!version.isNullOrBlank()) { "engine/gradle.properties has no version" }
+    version
+}
+
 android {
     namespace = "app.morphe.manager"
     compileSdk = 37
@@ -252,9 +264,12 @@ android {
         val versionCodeOffset = 0
         versionCode = timestampVersionCode + versionCodeOffset
 
-        // Expose the resolved morphe-patcher version so PatcherViewModel can compare it
-        // against the Patcher-Version declared in .mpp bundle manifests at runtime.
-        buildConfigField("String", "PATCHER_VERSION", "\"${libs.versions.morphe.patcher.get()}\"")
+        // Expose the engine's own version so PatcherViewModel can compare it against the
+        // Patcher-Version declared in .mpp bundle manifests at runtime. Read from the engine's
+        // gradle.properties rather than from the version catalog: the engine is versioned
+        // independently, and a catalog string would silently report a version the build does not
+        // contain. engineVersion is resolved above.
+        buildConfigField("String", "PATCHER_VERSION", "\"$engineVersion\"")
 
         buildConfigField("String[]", "TRANSLATIONS", translationTags)
 
