@@ -975,8 +975,8 @@ Thư mục này cần có ít nhất một trong các thư mục sau (tuỳ theo
 - mipmap-xxxhdpi
 
 Mỗi thư mục trên phải chứa đầy đủ các tệp sau:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Kích thước hình ảnh tương ứng:
 - mipmap-mdpi: 108x108 px
@@ -987,17 +987,17 @@ Kích thước hình ảnh tương ứng:
 
 Ngoài ra,
 Có thể thêm thư mục drawable chứa icon đơn sắc:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Có thể thêm icon thông báo theo một trong các cách sau:
 - Vector (XML) trong drawable:
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - Ảnh PNG trong các thư mục drawable-dpi:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Logo đầu trang</string>
     <string name="settings_advanced_patch_options_custom_header_description">Tùy chỉnh logo đầu trang</string>
@@ -1010,8 +1010,8 @@ Thư mục này phải chứa một hoặc nhiều thư mục sau, tùy theo DPI
 - drawable-xxxhdpi
 
 Mỗi thư mục trên bắt buộc phải chứa đầy đủ các tệp sau:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Kích thước hình ảnh yêu cầu:
 - drawable-hdpi: 194x72 px

@@ -1042,8 +1042,8 @@ The folder must contain one or more of the following folders, depending on the D
 - mipmap-xxxhdpi
 
 Each of the folders must contain all of the following files:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 The image dimensions must be as follows:
 - mipmap-mdpi: 108x108 px
@@ -1053,17 +1053,17 @@ The image dimensions must be as follows:
 - mipmap-xxxhdpi: 432x432 px
 
 Optionally, the path contains a \'drawable\' folder with a monochrome icon file:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Optionally, the path contains a notification icon in one of the following formats:
 - XML vector drawable in \'drawable\':
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - PNG raster images in \'drawable-dpi\' folders:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
 
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Custom header logo</string>
@@ -1077,8 +1077,8 @@ The folder must contain one or more of the following folders, depending on the D
 - drawable-xxxhdpi
 
 Each of the folders must contain all of the following files:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 The image dimensions must be as follows:
 - drawable-hdpi: 194x72 px
@@ -1290,7 +1290,7 @@ Details: %2$s"</string>
     <string name="settings_system_patched_apks_delete_title">Delete patched APK?</string>
     <string name="settings_system_patched_apks_deleted">Patched APK deleted successfully</string>
     <string name="settings_system_patched_apks_delete_all_title">Delete all patched APKs?</string>
-    <string name="settings_system_patched_apks_export_zip_name" translatable="false">morphe-patched-apks.zip</string>
+    <string name="settings_system_patched_apks_export_zip_name" translatable="false">max-patched-apks.zip</string>
 
     <!-- Settings - System Tab - Storage Management - Original APKs Management -->
     <string name="settings_system_original_apks_title">Original APKs</string>
@@ -1299,7 +1299,7 @@ Details: %2$s"</string>
     <string name="settings_system_original_apks_delete_title">Delete original APK?</string>
     <string name="settings_system_original_apks_delete_notice">You won\'t be able to repatch without providing a new APK</string>
     <string name="settings_system_original_apks_delete_all_title">Delete all original APKs?</string>
-    <string name="settings_system_original_apks_export_zip_name" translatable="false">morphe-original-apks.zip</string>
+    <string name="settings_system_original_apks_export_zip_name" translatable="false">max-original-apks.zip</string>
 
     <!-- Settings - System Tab - Storage Management - Patch Selection Management -->
     <string name="settings_system_patch_selections_title">Patch selections</string>

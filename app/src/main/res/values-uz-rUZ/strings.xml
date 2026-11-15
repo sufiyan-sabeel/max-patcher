@@ -974,8 +974,8 @@ Papkada quyidagi papkalardan biri yoki bir nechtasi bo‘lishi kerak, bu moslama
 - mipmap-xxxhdpi
 
 Har bir papkada quyidagi fayllar bo‘lishi kerak:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Tasvir o‘lchamlari quyidagicha bo‘lishi kerak:
 - mipmap-mdpi: 108x108 px
@@ -985,17 +985,17 @@ Tasvir o‘lchamlari quyidagicha bo‘lishi kerak:
 - mipmap-xxxhdpi: 432x432 px
 
 Ixtiyoriy ravishda, yo‘lda \"drawable\" papkasi quyidagi bir rangdagi ikon fayli bilan mavjud bo‘lishi mumkin:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Ixtiyoriy ravishda, yo‘lda quyidagi formatlardan biri bildirishnoma ikoni mavjud bo‘lishi mumkin:
 - \"drawable\" dagi XML vektor chizig‘i:
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - \"drawable-dpi\" papkalaridagi PNG raster tasvirlari:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Ko\'rinish</string>
     <string name="settings_advanced_patch_options_custom_header_description">Bosh logotipni o‘zgartirish</string>
@@ -1008,8 +1008,8 @@ Papka quyidagi papkalardan birini yoki bir nechta o'z ichiga olishi kerak, bu qu
 - drawable-xxxhdpi
 
 Har bir papkada quyidagi fayllar bo'lishi kerak:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Rasm o'lchamlari quyidagicha bo'lishi kerak:
 - drawable-hdpi: 194x72 px

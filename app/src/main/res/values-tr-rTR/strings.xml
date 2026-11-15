@@ -975,8 +975,8 @@ Bu klasör, cihazın DPI'sine bağlı olarak bir veya daha fazla aşağıdaki kl
 - mipmap-xxxhdpi
 
 Bu klasörlerin her biri aşağıdaki tüm dosyaları içermelidir:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Resim boyutları aşağıdaki gibi olmalıdır:
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ Resim boyutları aşağıdaki gibi olmalıdır:
 - mipmap-xxxhdpi: 432x432 px
 
 İsteğe bağlı olarak, yol, monokrom bir simge dosyası içeren bir 'drawable' klasörü içerir:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 İsteğe bağlı olarak, yol, aşağıdaki formatlardan birinde bir bildirim simgesi içerir:
 - 'drawable' klasöründeki XML vektör çizilebilir:
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - 'drawable-dpi' klasörlerindeki PNG raster görüntüleri:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Özel başlık logosu</string>
     <string name="settings_advanced_patch_options_custom_header_description">Başlık logosunu değiştirir</string>
@@ -1009,8 +1009,8 @@ Klasör, cihazın DPI değerine bağlı olarak aşağıdaki klasörlerden birini
 - drawable-xxxhdpi
 
 Her bir klasör şu dosyaların tamamını içermelidir:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Resim boyutları şu şekilde olmalıdır:
 - drawable-hdpi: 194x72 px

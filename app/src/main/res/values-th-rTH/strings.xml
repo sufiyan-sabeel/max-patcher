@@ -975,8 +975,8 @@
 - mipmap-xxxhdpi
 
 แต่ละโฟลเดอร์ต้องมีไฟล์ต่อไปนี้ทั้งหมด:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 ขนาดของรูปภาพต้องเป็นดังนี้:
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ morphe_adaptive_foreground_custom.png
 - mipmap-xxxhdpi: 432x432 px
 
 ทางเลือก: พาธอาจมีโฟลเดอร์ 'drawable' พร้อมไฟล์ไอคอนขาวดำ:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 ทางเลือก: พาธอาจมีไอคอนการแจ้งเตือนในรูปแบบใดรูปแบบหนึ่งต่อไปนี้:
 - รูปภาพเวกเตอร์ XML ใน 'drawable':
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - รูปภาพ raster PNG ในโฟลเดอร์ 'drawable-dpi':
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">โลโก้ส่วนหัวแบบกำหนดเอง</string>
     <string name="settings_advanced_patch_options_custom_header_description">เปลี่ยนโลโก้ส่วนหัว</string>
@@ -1009,8 +1009,8 @@ morphe_adaptive_monochrome_custom.xml
 - drawable-xxxhdpi
 
 แต่ละแต่ละของโฟเดอร์ต้องมีทั้งหมดของไฟล์ต่อไปนี้:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 ขนาดของไฟล์ต้องเป็นดังค์เหลือดังต่อไปนี้:
 - drawable-hdpi: 194x72 px

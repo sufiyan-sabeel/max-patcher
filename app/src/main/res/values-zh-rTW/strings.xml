@@ -975,8 +975,8 @@
 - mipmap-xxxhdpi
 
 每個資料夾必須包含下列所有檔案：
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 影像尺寸必須如下：
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ morphe_adaptive_foreground_custom.png
 - mipmap-xxxhdpi: 432x432 px
 
 可選，路徑可包含帶有單色圖示檔案的 'drawable' 資料夾：
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 可選，路徑可包含以下格式之一的通知圖示：
 - 在 'drawable' 中的 XML 向量圖形：
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - 在 'drawable-dpi' 資料夾中的 PNG 點陣影像：
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)\""</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)\""</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">自訂標頭標誌</string>
     <string name="settings_advanced_patch_options_custom_header_description">變更標頭標誌</string>
@@ -1009,8 +1009,8 @@ morphe_adaptive_monochrome_custom.xml
 - drawable-xxxhdpi
 
 每個資料夾必須包含下列所有檔案：
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 影像尺寸必須如下：
 - drawable-hdpi: 194x72 px
