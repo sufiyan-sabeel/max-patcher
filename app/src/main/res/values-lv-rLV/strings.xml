@@ -974,8 +974,8 @@ Mapē jābūt vienai vai vairākām no šādām mapēm, atkarībā no ierīces D
 - mipmap-xxxhdpi
 
 Kattrai no mapēm jābūt visiem šādiem failiem:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Attēlu izmēriem jābūt šādiem:
 - mipmap-mdpi: 108x108 px
@@ -985,17 +985,17 @@ Attēlu izmēriem jābūt šādiem:
 - mipmap-xxxhdpi: 432x432 px
 
 Papildinājumā ceļā var būt mappa \"drawable\" ar monohromu ikonas failu:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Papildinājumā ceļā var būt paziņojuma ikona vienā no šādiem formātiem:
 - XML vektora drawable mapē \"drawable\":
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - PNG rastru attēli mapēs \"drawable-dpi\":
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Pielāgots galvene logotips</string>
     <string name="settings_advanced_patch_options_custom_header_description">Maina galvenes logo</string>
@@ -1008,8 +1008,8 @@ Mapai jāsatur viena vai vairākas no šīm mapām, atkarībā no ierīces DPI:
 - drawable-xxxhdpi
 
 Katra no mapām jāsatur visi šie faili:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Attēla izmēri jābūt šādiem:
 - drawable-hdpi: 194x72 px

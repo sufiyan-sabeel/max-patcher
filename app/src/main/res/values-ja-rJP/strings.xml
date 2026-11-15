@@ -976,8 +976,8 @@ APK ファイルの取得元を選択してください"</string>
 - mipmap-xxxhdpi
 
 各フォルダーには、以下のファイルすべてを含める必要があります。
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 画像の寸法は以下のとおりです。
 - mipmap-mdpi: 108x108 ピクセル
@@ -987,17 +987,17 @@ morphe_adaptive_foreground_custom.png
 - mipmap-xxxhdpi: 432x432 ピクセル
 
 必要に応じて、モノクロ アイコン ファイルを含む「drawable」フォルダーを含めることができます。
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 必要に応じて、以下のいずれかの形式の通知アイコンを含めることができます。
 - 「drawable」フォルダー内に XML ベクター画像
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - 「drawable-dpi」フォルダー内に PNG ラスター画像
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 ピクセル)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 ピクセル)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 ピクセル)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 ピクセル)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 ピクセル)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 ピクセル)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 ピクセル)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 ピクセル)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 ピクセル)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 ピクセル)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">カスタム ヘッダー ロゴ</string>
     <string name="settings_advanced_patch_options_custom_header_description">ヘッダーのロゴを変更します</string>
@@ -1010,8 +1010,8 @@ morphe_adaptive_monochrome_custom.xml
 - drawable-xxxhdpi
 
 各フォルダーには、以下のすべてのファイルが含まれている必要があります。
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 画像のサイズは、以下の通りである必要があります。
 - drawable-hdpi: 194x72 ピクセル

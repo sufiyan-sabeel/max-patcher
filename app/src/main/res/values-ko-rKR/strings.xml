@@ -975,8 +975,8 @@ APK를 가져올 위치를 선택하세요"</string>
 - mipmap-xxxhdpi
 
 각 폴더에는 다음 파일이 모두 포함되어야 합니다:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 이미지 크기는 다음과 같아야 합니다:
 - mipmap-mdpi: 108x108 px
@@ -986,17 +986,17 @@ morphe_adaptive_foreground_custom.png
 - mipmap-xxxhdpi: 432x432 px
 
 선택적으로, 경로에는 모노크롬 아이콘 파일이 있는 'drawable' 폴더가 포함될 수 있습니다:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 선택적으로, 경로에는 다음 형식 중 하나의 알림 아이콘이 포함될 수 있습니다:
 - 'drawable' 폴더의 XML 벡터 드로어블:
-  morphe_notification_icon_custom.xml
+  max_notification_icon_custom.xml
 - 'drawable-dpi' 폴더의 PNG 래스터 이미지:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">커스텀 헤더 로고</string>
     <string name="settings_advanced_patch_options_custom_header_description">헤더 로고를 변경해 보세요</string>
@@ -1009,8 +1009,8 @@ morphe_adaptive_monochrome_custom.xml
 - drawable-xxxhdpi
 
 각 폴더에는 다음 파일이 모두 포함되어야 합니다:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 이미지 크기는 다음과 같아야 합니다:
 - drawable-hdpi: 194x72 px

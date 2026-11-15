@@ -975,8 +975,8 @@ Mappan verður að innihalda eina eða fleiri af eftirfarandi möppum, eftir upp
 - mipmap-xxxhdpi
 
 Margar margar hverjar mættanninnihalda allar eftirfarandi skrár:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+max_adaptive_background_custom.png
+max_adaptive_foreground_custom.png
 
 Myndastærðirnar verða að vera eftirfarandi:
 - mipmap-mdpi: 108x108 px
@@ -986,14 +986,14 @@ Myndastærðirnar verða að vera eftirfarandi:
 - mipmap-xxxhdpi: 432x432 px
 
 Valfrjálslega inniheldur slóðin \"drawable\" möppu með Monochrome tákna skrá:
-morphe_adaptive_monochrome_custom.xml
+max_adaptive_monochrome_custom.xml
 
 Valfrjálslega inniheldur slóðinn tákn í \"drawable-dpi\" möppum:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/max_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/max_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/max_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/max_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/max_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Sérstakur haus</string>
     <string name="settings_advanced_patch_options_custom_header_description">Fjerlar shorts fra launcher langtryks menu</string>
@@ -1006,8 +1006,8 @@ Mappan verður að innihalda eina eða fleiri af eftirfarandi möppum, í samræ
 - drawable-xxxhdpi
 
 Öll mappan verða að innihalda allar eftirtaldar skrautir:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+max_header_custom_light.png
+max_header_custom_dark.png
 
 Myndastærðin verður að vera sem hér segir:
 - drawable-hdpi: 194x72 px
