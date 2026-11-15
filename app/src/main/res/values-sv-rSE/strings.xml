@@ -663,7 +663,7 @@ Om du avinstallerar raderas alla appdata permanent"</string>
     <string name="patcher_option_paths_rejected_title">Filer för tilläggsalternativ kan inte användas</string>
     <string name="patcher_option_paths_rejected_description">Ett eller flera tilläggsalternativ pekar på filer som saknas eller inte innehåller det som tillägget kräver. Ta bort sökvägarna för att modifiera utan dem, eller åtgärda filerna enligt instruktionerna för alternativen och försök igen</string>
     <string name="patcher_option_paths_clear">Ta bort sökvägarna och fortsätt</string>
-    <string name="patcher_storage_permission_hint">Tips: Flytta filerna till /Android/data/app.morphe.manager/files/ – inga extra behörigheter behövs</string>
+    <string name="patcher_storage_permission_hint">Tips: Flytta filerna till /Android/data/app.maxpatcher.manager/files/ – inga extra behörigheter behövs</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Förbereder</string>
     <string name="patcher_step_load_patches">Läser in tillägg</string>

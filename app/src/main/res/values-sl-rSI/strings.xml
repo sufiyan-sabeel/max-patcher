@@ -663,7 +663,7 @@ Odstranitev bo trajno izbrisala vse podatke aplikacije."</string>
     <string name="patcher_option_paths_rejected_title">Datoteke možnosti za zakrpo ne morejo biti uporabljene</string>
     <string name="patcher_option_paths_rejected_description">Ena ali več možnosti za zakrpo kaže na datoteke, ki manjkajo ali ne vsebujejo tega, kar zakrpa zahteva. Odstranite poti do zakrpe brez njih ali popravite datoteke po navodilih v možnostih in poskusite znova</string>
     <string name="patcher_option_paths_clear">Odstranite poti in nadaljujte.</string>
-    <string name="patcher_storage_permission_hint">Namig: Premaknite datoteke v /Android/data/app.morphe.manager/files/ - dodatna dovoljenja niso potrebna</string>
+    <string name="patcher_storage_permission_hint">Namig: Premaknite datoteke v /Android/data/app.maxpatcher.manager/files/ - dodatna dovoljenja niso potrebna</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Pripravljanje</string>
     <string name="patcher_step_load_patches">Nalaganje popravkov</string>

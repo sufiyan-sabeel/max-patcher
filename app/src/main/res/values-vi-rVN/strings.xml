@@ -663,7 +663,7 @@ Gỡ cài đặt sẽ xóa vĩnh viễn toàn bộ dữ liệu ứng dụng"</st
     <string name="patcher_option_paths_rejected_title">Không thể sử dụng các tệp tùy chọn bản vá</string>
     <string name="patcher_option_paths_rejected_description">Một hoặc nhiều tùy chọn bản vá trỏ đến các tệp bị thiếu hoặc không có nội dung mà bản vá yêu cầu. Hãy xóa các đường dẫn để vá mà không cần chúng, hoặc sửa các tệp theo hướng dẫn của tùy chọn và thử lại</string>
     <string name="patcher_option_paths_clear">Biểu tượng dùng để vá ứng dụng. Nó cũng được sử dụng ở những nơi mà ứng dụng không thể thay đổi nó sau này, chẳng hạn như Android Auto và danh sách ứng dụng trong cài đặt hệ thống.</string>
-    <string name="patcher_storage_permission_hint">Gợi ý: Di chuyển tệp sang /Android/data/app.morphe.manager/files/ - sẽ không cần cấp thêm quyền truy cập</string>
+    <string name="patcher_storage_permission_hint">Gợi ý: Di chuyển tệp sang /Android/data/app.maxpatcher.manager/files/ - sẽ không cần cấp thêm quyền truy cập</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Đang chuẩn bị</string>
     <string name="patcher_step_load_patches">Đang tải bản vá</string>

@@ -663,7 +663,7 @@ Kaldırma işlemi tüm uygulama verilerini kalıcı olarak silecektir"</string>
     <string name="patcher_option_paths_rejected_title">Yama seçenek dosyaları kullanılamaz</string>
     <string name="patcher_option_paths_rejected_description">Bir veya daha fazla yama seçeneği, eksik olan veya yamanın gerektirdiği özelliklere sahip olmayan dosyalara işaret ediyor. Bu dosyalar olmadan yamalamak için yolları kaldırın veya seçenek talimatlarında açıklandığı gibi dosyaları düzeltip tekrar deneyin</string>
     <string name="patcher_option_paths_clear">Dosya yollarını kaldır ve devam et</string>
-    <string name="patcher_storage_permission_hint">İpucu: Dosyaları /Android/data/app.morphe.manager/files/ dizinine taşıyın - ekstra izin gerektirmez</string>
+    <string name="patcher_storage_permission_hint">İpucu: Dosyaları /Android/data/app.maxpatcher.manager/files/ dizinine taşıyın - ekstra izin gerektirmez</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Hazırlanıyor</string>
     <string name="patcher_step_load_patches">Yamalar yükleniyor</string>

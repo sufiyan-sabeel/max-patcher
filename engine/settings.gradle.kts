@@ -1,3 +1,13 @@
+pluginManagement {
+    repositories {
+        // Maven Central first: the plugin portal redirects artifacts to a CDN that some networks
+        // block outright, and every plugin this build needs is published to Central as well.
+        mavenCentral()
+        gradlePluginPortal()
+        google()
+    }
+}
+
 rootProject.name = "max-engine"
 
 // The engine's two outside libraries are built from source, pinned by the commits recorded in

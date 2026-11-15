@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">無法使用修補選項檔案</string>
     <string name="patcher_option_paths_rejected_description">缺乏一個或多個修補選項指向的檔案，或不包含修補所需內容。請移除這些路徑後再進行修補，或按照選項說明修復檔案後重試</string>
     <string name="patcher_option_paths_clear">移除路徑並繼續</string>
-    <string name="patcher_storage_permission_hint">提示：將檔案移至 /Android/data/app.morphe.manager/files/ - 不需要額外權限</string>
+    <string name="patcher_storage_permission_hint">提示：將檔案移至 /Android/data/app.maxpatcher.manager/files/ - 不需要額外權限</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">正在準備</string>
     <string name="patcher_step_load_patches">載入修補程式</string>

@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">补丁选项文件无法使用</string>
     <string name="patcher_option_paths_rejected_description">一个或多个补丁选项指向的文件已丢失，或不包含补丁所需的内容。请移除这些路径以在没有它们的情况下进行补丁，或按照选项说明修复文件后重试</string>
     <string name="patcher_option_paths_clear">移除文件路径并继续</string>
-    <string name="patcher_storage_permission_hint">提示：将文件移动到/Android/data/app.morphe.manager/files/ - 不需要额外权限</string>
+    <string name="patcher_storage_permission_hint">提示：将文件移动到/Android/data/app.maxpatcher.manager/files/ - 不需要额外权限</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">准备中</string>
     <string name="patcher_step_load_patches">加载补丁</string>

@@ -661,7 +661,7 @@
     <string name="patcher_option_paths_rejected_title">Файли параметрів патчів не можна використовувати</string>
     <string name="patcher_option_paths_rejected_description">Один або кілька параметрів патчів вказують на файли, яких немає або які не містять того, що потрібно патчу. Видаліть шляхи, щоб пропатчити без них, або виправте файли відповідно до інструкцій параметра та спробуйте знову</string>
     <string name="patcher_option_paths_clear">Видалити шляхи та продовжити</string>
-    <string name="patcher_storage_permission_hint">Порада: перемістіть файли до /Android/data/app.morphe.manager/files/ - додаткові дозволи не потрібні</string>
+    <string name="patcher_storage_permission_hint">Порада: перемістіть файли до /Android/data/app.maxpatcher.manager/files/ - додаткові дозволи не потрібні</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Підготовка</string>
     <string name="patcher_step_load_patches">Завантаження патчів</string>

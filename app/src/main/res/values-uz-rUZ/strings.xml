@@ -662,7 +662,7 @@ O‘rnatish barcha ilova ma'lumotlarini o‘chiradi"</string>
     <string name="patcher_option_paths_rejected_title">Patch variantlari fayllaridan foydalanib bo\"lmaydi</string>
     <string name="patcher_option_paths_rejected_description">Bir yoki bir nechta patch variantlari mavjud bo\"lmagan yoki patch talab qilgan narsaga ega bo\"lmagan fayllarga ishora qilmoqda. Ularsiz patch qilish uchun yo\"llarni olib tashlang yoki fayllarni variant ko\"rsatmalarida tavsiflanganidek tuzatib, qayta urinib ko\"ring</string>
     <string name="patcher_option_paths_clear">Yo‘llarni olib tashlash va davom etish</string>
-    <string name="patcher_storage_permission_hint">Maslahat: Fayllarni /Android/data/app.morphe.manager/files/ ga ko\'chiring - qo\'shimcha ruxsatlar kerak emas</string>
+    <string name="patcher_storage_permission_hint">Maslahat: Fayllarni /Android/data/app.maxpatcher.manager/files/ ga ko\'chiring - qo\'shimcha ruxsatlar kerak emas</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Tayyorlanmoqda</string>
     <string name="patcher_step_load_patches">Patchlarni yuklamoqda</string>

@@ -663,7 +663,7 @@ Kuondoa programu kutafuta data zote za programu moja kwa moja"</string>
     <string name="patcher_option_paths_rejected_title">Faili za chaguo la kiraka haziwezi kutumika</string>
     <string name="patcher_option_paths_rejected_description">Chaguo moja au zaidi za patch zinaelekeza kwenye faili ambazo hazipo au hazina kile ambacho patch inaomba. Ondoa njia za patch bila hizo, au rekebisha faili kama maelekezo ya chaguo yanavyoeleza na ujaribu tena</string>
     <string name="patcher_option_paths_clear">Ondoa njia na uendelee</string>
-    <string name="patcher_storage_permission_hint">Kidokezo: Hamisha faili kwenda /Android/data/app.morphe.manager/files/ - hakuna ruhusa za ziada zinazohitajika</string>
+    <string name="patcher_storage_permission_hint">Kidokezo: Hamisha faili kwenda /Android/data/app.maxpatcher.manager/files/ - hakuna ruhusa za ziada zinazohitajika</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Inaandaa</string>
     <string name="patcher_step_load_patches">Inapakia marekebisho</string>

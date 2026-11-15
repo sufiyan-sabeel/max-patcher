@@ -663,7 +663,7 @@ Ukususa kuzosula uphakade yonke idatha yohlelo"</string>
     <string name="patcher_option_paths_rejected_title">Amafaila okukhetha i-patch aweke asetshenziswe</string>
     <string name="patcher_option_paths_rejected_description">Okukhethwayo kwe-patch okukodwa noma okuningi kukhomba amafaila ashayekile noma angenalo okucelwe i-patch. Susa imigqa yokuxhumana ukuze wenze i-patch ngaphandle kwawo, noma ulungise amafaila njengoba kuchazwe emigqondweni yokukhetha bese uzama futhi</string>
     <string name="patcher_option_paths_clear">Susa imizila bese uyaqhubeka</string>
-    <string name="patcher_storage_permission_hint">Iseluleko: Yisa amafaila ku /Android/data/app.morphe.manager/files/ - akudingeki imvume eyengeziwe</string>
+    <string name="patcher_storage_permission_hint">Iseluleko: Yisa amafaila ku /Android/data/app.maxpatcher.manager/files/ - akudingeki imvume eyengeziwe</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Kulungiswa</string>
     <string name="patcher_step_load_patches">Kulayidwa ama-patches</string>

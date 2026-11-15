@@ -684,7 +684,7 @@ Uninstalling will permanently erase all app data"</string>
     <string name="patcher_option_paths_rejected_title">Patch option files cannot be used</string>
     <string name="patcher_option_paths_rejected_description">One or more patch options point to files that are missing or do not have what the patch asks for. Remove the paths to patch without them, or fix the files as the option instructions describe and try again</string>
     <string name="patcher_option_paths_clear">Remove the paths and continue</string>
-    <string name="patcher_storage_permission_hint">Tip: Move files to /Android/data/app.morphe.manager/files/ - no extra permissions needed</string>
+    <string name="patcher_storage_permission_hint">Tip: Move files to /Android/data/app.maxpatcher.manager/files/ - no extra permissions needed</string>
 
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Preparing</string>

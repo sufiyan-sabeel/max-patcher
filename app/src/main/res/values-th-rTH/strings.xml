@@ -663,7 +663,7 @@
     <string name="patcher_option_paths_rejected_title">ไม่สามารถใช้ไฟล์ตัวเลือกแพตช์ได้</string>
     <string name="patcher_option_paths_rejected_description">ตัวเลือกแพตช์หนึ่งรายการหรือมากกว่านั้นระบุไปยังไฟล์ที่หายไป หรือไม่มีสิ่งที่แพตช์ต้องการ โปรดลบเส้นทางเพื่อทำการแพตช์โดยไม่มีไฟล์เหล่านั้น หรือแก้ไขไฟล์ตามคำแนะนำของตัวเลือกแล้วลองอีกครั้ง</string>
     <string name="patcher_option_paths_clear">นำพาธออกแล้วดำเนินการต่อ</string>
-    <string name="patcher_storage_permission_hint">คำแนะนำ: ย้ายไฟล์ไปยัง /Android/data/app.morphe.manager/files/ - ไม่จำเป็นต้องมีสิทธิ์พิเศษอื่น</string>
+    <string name="patcher_storage_permission_hint">คำแนะนำ: ย้ายไฟล์ไปยัง /Android/data/app.maxpatcher.manager/files/ - ไม่จำเป็นต้องมีสิทธิ์พิเศษอื่น</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">กำลังเตรียม</string>
     <string name="patcher_step_load_patches">กำลังโหลดแพตช์</string>
