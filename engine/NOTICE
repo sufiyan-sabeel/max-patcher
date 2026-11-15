@@ -1,0 +1,60 @@
+MAX Engine NOTICE
+=================
+
+MAX Engine is an independently maintained fork of Morphe Patcher
+(https://github.com/MorpheApp/morphe-patcher), maintained as part of MAX Patcher. It is not
+affiliated with, endorsed by, or an official release of the Morphe project.
+
+What this fork changes
+----------------------
+
+MAX Engine starts from Morphe Patcher 2.3.0 and, at 0.1.0, changes nothing about patching itself.
+The differences are all about how the engine is built and distributed:
+
+- The Gradle project is named max-engine and its version is its own, independent of MAX Patcher's
+  and of MAX Patches'.
+- Its libraries (the ARSCLib fork and the smali fork) are built from vendored sources pinned to
+  exact commits instead of being resolved from JitPack or the GitHub Packages registry.
+- It is consumed as a Gradle included build by MAX Patcher, so the app no longer downloads the
+  patcher from an authenticated package registry.
+- The public API is unchanged. `api/morphe-patcher.api`, the binary-compatibility dump, is carried
+  over untouched: any change to the ABI shows up as a diff in that file, and CI fails on it.
+
+Java package names (`app.morphe.patcher.*`) are deliberately unchanged. Every patch bundle and every
+patch source in circulation is compiled against those names; renaming them would break patch
+compatibility for no user-visible gain. GPLv3 Section 7c asks for the product to be marked as
+different, which the project name, version, NOTICE and repository do.
+
+Upstream attribution
+--------------------
+
+Copyright 2026 Morphe. Licensed under the GNU General Public License version 3.0. Upstream source:
+https://github.com/MorpheApp/morphe-patcher
+
+The upstream NOTICE, preserved in full
+--------------------------------------
+
+Morphe NOTICE
+
+https://github.com/MorpheApp/morphe-patcher
+
+=============
+
+Portions of this software are provided "AS IS" by the Morphe software project.
+Any express or implied warranties, including the implied warranties of
+merchantability and fitness for a particular purpose, are disclaimed.
+
+
+GPLv3 Section 7c: Prohibiting Misrepresentation of Origin
+
+You are prohibited from misrepresenting the origin of the Program,
+and modified versions of the Program must be identified and marked in
+reasonable ways as different from the original version so as not to cause
+confusion regarding their origin.
+
+
+GPLv3 Section 7e: Declining Grant of Trademark Rights
+
+This License does not grant any rights or permission under trademark law
+to use the name "Morphe" or any of the Program's trade names, trademarks,
+service marks, or logos.
