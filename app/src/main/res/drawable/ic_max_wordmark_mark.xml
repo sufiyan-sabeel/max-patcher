@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2026 MAX Patcher contributors.
+     Licensed under the GNU General Public License v3.0, see LICENSE.
+     Original artwork drawn for MAX Patcher; it replaces the upstream branding, which is
+     not covered by the upstream open-source licence. -->
+<!-- The M of the MAX wordmark in the brand gradient, sharing its viewport with
+     ic_max_wordmark_text so the two line up as one mark. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="69dp"
+    android:height="32dp"
+    android:viewportWidth="228"
+    android:viewportHeight="106">
+
+    <path android:pathData="M0.00,89.00L0.00,17.00L19.24,17.00L37.00,44.36L54.76,17.00L74.00,17.00L74.00,89.00L54.76,89.00L54.76,48.68L37.00,73.16L19.24,48.68L19.24,89.00Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="0"
+                    android:startY="0"
+                    android:endX="74"
+                    android:endY="0">
+                    <item android:offset="0" android:color="#FF22C3D6" />
+                    <item android:offset="1" android:color="#FF127C86" />
+                </gradient>
+            </aapt:attr>
+    </path>
+</vector>

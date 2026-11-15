@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2026 MAX Patcher contributors.
+     Licensed under the GNU General Public License v3.0, see LICENSE.
+     Original artwork drawn for MAX Patcher; it replaces the upstream branding, which is
+     not covered by the upstream open-source licence. -->
+<!-- The AX of the MAX wordmark, tinted to the surrounding text colour at runtime. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="69dp"
+    android:height="32dp"
+    android:viewportWidth="228"
+    android:viewportHeight="106">
+
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M112.00,17.00L126.00,17.00L150.00,89.00L134.00,89.00L130.00,70.00L108.00,70.00L104.00,89.00L88.00,89.00ZM119.00,44.00L114.00,66.00L124.00,66.00Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M166.00,17.00L182.00,17.00L197.00,45.00L212.00,17.00L228.00,17.00L206.00,53.00L228.00,89.00L212.00,89.00L197.00,61.00L182.00,89.00L166.00,89.00L188.00,53.00Z" />
+</vector>

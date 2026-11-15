@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2026 MAX Patcher contributors.
+     Licensed under the GNU General Public License v3.0, see LICENSE.
+     Original artwork drawn for MAX Patcher; it replaces the upstream branding, which is
+     not covered by the upstream open-source licence. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Must stay white so the system draws it white in the status bar. -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M12,3.5A8.5,8.5 0 1,0 12,20.5A8.5,8.5 0 1,0 12,3.5Z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M9,9L15,15M15,9L9,15" />
+</vector>
