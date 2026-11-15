@@ -1,0 +1,16 @@
+/*
+ * Copyright 2026 Morphe.
+ * https://github.com/MorpheApp/morphe-manager
+ */
+
+package app.morphe.manager.domain.manager
+
+import androidx.annotation.StringRes
+
+/**
+ * Enum values picked from a list of modes (sorting, filtering, grouping) provide their own
+ * label string resource so shared UI can render them without a per-enum mapping helper.
+ */
+interface SortModeSpec {
+    @get:StringRes val labelRes: Int
+}
