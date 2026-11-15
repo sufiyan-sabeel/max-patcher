@@ -1,0 +1,15 @@
+name: CI
+on: [pull_request, push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Gradle 8.5 cannot run on the runner's default JDK, so use the same version as jitpack.yml.
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 11
+      - uses: gradle/actions/setup-gradle@v4
+      - run: ./gradlew build
