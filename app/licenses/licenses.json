@@ -23,30 +23,46 @@
     "MIT": {
       "name": "MIT License",
       "url": "https://spdx.org/licenses/MIT.html"
+    },
+    "Apache-2.0": {
+      "name": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
     }
   },
   "libraries": [
     {
       "name": "Morphe Manager",
       "website": "https://Morphe.software",
-      "licenses": ["GPL-3.0-only"],
+      "licenses": [
+        "GPL-3.0-only"
+      ],
       "text": "NOTICE.txt"
     },
     {
       "name": "OpenJDK",
       "description": "The Java runtime that patching runs in, built for Android by AngelAuraMC. Its source is at https://github.com/AngelAuraMC/angelauramc-openjdk-build, https://github.com/openjdk/jdk17u and https://github.com/openjdk/jdk25u",
       "website": "https://openjdk.org",
-      "licenses": ["GPL-2.0-with-classpath-exception"]
+      "licenses": [
+        "GPL-2.0-with-classpath-exception"
+      ],
+      "text": "GPL-2.0-with-classpath-exception.txt"
     },
     {
       "name": "ARSCLib",
       "website": "https://github.com/REAndroid/ARSCLib",
-      "licenses": ["Apache-2.0"]
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "text": "Apache-2.0.txt",
+      "description": "Resource table library, forked from REAndroid's ARSCLib and vendored at commit 675bed2d. See vendor/PINS.md."
     },
     {
       "name": "libsu (core)",
       "website": "https://github.com/topjohnwu/libsu",
-      "licenses": ["Apache-2.0"]
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "text": "Apache-2.0.txt"
     }
   ]
 }

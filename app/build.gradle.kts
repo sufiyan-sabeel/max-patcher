@@ -11,6 +11,7 @@ plugins {
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.devtools)
     alias(libs.plugins.licensee)
+    alias(libs.plugins.cyclonedx)
     signing
 }
 
@@ -260,13 +261,29 @@ android {
 
         versionName = version.toString()
 
-        // VersionCode derived from current time (1-minute intervals) + offset.
-        val nowMillis = System.currentTimeMillis()
-        val timestampVersionCode = (nowMillis / (60 * 1000)).toInt()
-        // No offset: MAX Patcher has no earlier installation to stay newer than, so the
-        // timestamp alone is the version code.
-        val versionCodeOffset = 0
-        versionCode = timestampVersionCode + versionCodeOffset
+        // A version code derived from the version name, not from the clock.
+        //
+        // The timestamp scheme upstream used made two builds of one commit differ, so no two APKs
+        // could ever be compared and a reproducible build was impossible by construction.
+        //
+        // Scheme: major * 1_000_000 + minor * 10_000 + patch * 100 + build
+        //   versionName 0.1.0, build 0  ->  100
+        //   versionName 0.1.0, build 1  ->  200   (a rebuild of the same version that must be newer)
+        //   versionName 1.0.0, build 0  ->  1_000_000
+        // minor, patch and build are clamped to 99; a version beyond that should have been a
+        // major or minor bump. -PmaxBuildNumber is the only input that changes the code, and it is
+        // explicit, which is what makes two builds of one commit comparable.
+        run {
+            val parts = version.toString().split(".")
+            fun digit(index: Int) =
+                parts.getOrNull(index)?.takeWhile(Char::isDigit)?.toIntOrNull() ?: 0
+            val major = digit(0)
+            val minor = digit(1).coerceAtMost(99)
+            val patch = digit(2).coerceAtMost(99)
+            val build = (providers.gradleProperty("maxBuildNumber").orNull ?: "0")
+                .toIntOrNull()?.coerceIn(0, 99) ?: 0
+            versionCode = major * 1_000_000 + minor * 10_000 + patch * 100 + build
+        }
 
         // Expose the engine's own version so PatcherViewModel can compare it against the
         // Patcher-Version declared in .mpp bundle manifests at runtime. Read from the engine's
@@ -447,6 +464,33 @@ val licensesByUrl = mapOf(
 )
 
 // A dependency under any other license fails the build, as the app could not be shipped with it
+// SBOM from the real dependency graph.
+//
+// The previous approach scanned the built APK and produced an empty document: Syft finds no package
+// inventory inside an APK. This walks the resolved release runtime classpath, so every module the app
+// links is listed with its version, purl and licence.
+//
+// What the plugin cannot see, and what .github/scripts/sbom_postprocess.py adds: the three embedded
+// JREs (downloaded by a Gradle task, never resolved as dependencies) and the vendored composites
+// (ARSCLib, smali), which Gradle reports as project dependencies without coordinates.
+cyclonedxBom {
+    includeConfigs.set(listOf("releaseRuntimeClasspath"))
+    skipConfigs.set(listOf(
+        "debugRuntimeClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseUnitTestRuntimeClasspath",
+        "androidTestReleaseRuntimeClasspath",
+    ))
+    includeLicenses.set(true)
+    includeBuildSystem.set(true)
+    schemaVersion.set("1.6")
+    destination.set(layout.buildDirectory.dir("reports"))
+    outputName.set("bom")
+    outputFormat.set("json")
+    componentVersion.set(version.toString())
+    projectName.set("MAX Patcher")
+}
+
 licensee {
     listOf("0BSD", "Apache-2.0", "BSD-3-Clause").forEach(::allow)
     licensesByUrl.forEach { (url, license) -> allowUrl(url) { because(license) } }

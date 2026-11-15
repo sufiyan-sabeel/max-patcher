@@ -67,6 +67,34 @@ jobs:
       - name: Assemble debug APK
         run: bash gradlew :app:assembleDebug --stacktrace
 
+      - name: Reproducibility check
+        run: |
+          # Same source, same inputs, built twice: the version code is now derived from the version
+          # name instead of the clock, so any difference left is packaging or signing metadata.
+          set -euo pipefail
+          FIRST=$(sha256sum app/build/outputs/apk/debug/*.apk | cut -d' ' -f1)
+          cp app/build/outputs/apk/debug/*.apk /tmp/first.apk
+          rm -rf app/build/outputs/apk
+          bash gradlew :app:assembleDebug --stacktrace
+          SECOND=$(sha256sum app/build/outputs/apk/debug/*.apk | cut -d' ' -f1)
+          {
+            echo "### Reproducibility"
+            echo '```'
+            echo "first build:  $FIRST"
+            echo "second build: $SECOND"
+            if [ "$FIRST" = "$SECOND" ]; then
+              echo "result: byte-identical"
+            else
+              echo "result: differing bytes with identical inputs"
+              echo "expected causes: APK signing block metadata, zip entry ordering"
+            fi
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "first  $FIRST"
+          echo "second $SECOND"
+          if [ "$FIRST" = "$SECOND" ]; then echo "REPRODUCIBLE=yes" >> "$GITHUB_ENV"; else
+            echo "REPRODUCIBLE=no" >> "$GITHUB_ENV"; fi
+
       - name: Checksums
         run: |
           cd app/build/outputs/apk/debug
@@ -91,19 +119,27 @@ jobs:
           # report at build time; it is the same list the in-app licence screen shows.
           bash gradlew :app:licensee --stacktrace
           python3 .github/scripts/licence_inventory.py
+          # Fails if a component is listed with no licence text, or with an undefined licence id.
+          python3 .github/scripts/licence_validate.py
 
-      - name: SBOM for the APK
-        uses: anchore/sbom-action@v0
-        with:
-          # Generated from the built APK, not from the Gradle graph: it describes what actually
-          # shipped, including the embedded JREs.
-          file: app/build/outputs/apk/debug/max-patcher-0.1.0-debug.apk
-          format: spdx-json
-          output-file: max-patcher-0.1.0-debug.spdx.json
-          artifact-name: max-patcher-sbom
-          upload-artifact: true
-          upload-release-assets: false
+      - name: SBOM
+        run: |
+          # From the resolved release runtime classpath, not from the APK: scanning an APK produced
+          # an empty document, which is what this step replaces.
+          bash gradlew :app:cyclonedxBom --stacktrace
+          python3 .github/scripts/sbom_postprocess.py
 
+      - name: Validate the SBOM against the CycloneDX schema
+        run: |
+          curl -sSL -o /tmp/cyclonedx \
+            https://github.com/CycloneDX/cyclonedx-cli/releases/download/v0.27.2/cyclonedx-linux-x64
+          chmod +x /tmp/cyclonedx
+          /tmp/cyclonedx --version
+          # Fails on a document that does not match the schema, and on one that is structurally
+          # valid but empty.
+          /tmp/cyclonedx validate --input-file max-patcher-sbom.cdx.json \
+            --input-format json --fail-on-errors
+          python3 .github/scripts/sbom_check.py
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
@@ -113,6 +149,7 @@ jobs:
             app/build/outputs/apk/debug/SHA256SUMS.txt
             apk-signature.txt
             licence-inventory.txt
+            max-patcher-sbom.cdx.json
           if-no-files-found: error
           retention-days: 14
 

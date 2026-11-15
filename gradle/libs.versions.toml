@@ -24,6 +24,7 @@ ktor = "3.6.1"
 ktx = "1.19.1"
 libsu = "6.0.0"
 licensee = "1.14.1"
+cyclonedx = "3.6.1"
 # Ahead of the Compose BOM, which still ships 1.4.0: the sheets build on the 1.5 bottom sheet API
 # (rememberBottomSheetState). Drop the override once the BOM ships a stable 1.5.0
 material3 = "1.5.0-rc01"
@@ -134,3 +135,4 @@ compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "
 devtools = { id = "com.google.devtools.ksp", version.ref = "dev-tools-gradle-plugin" }
 google-services = { id = "com.google.gms.google-services", version.ref = "google-services" }
 licensee = { id = "app.cash.licensee", version.ref = "licensee" }
+cyclonedx = { id = "org.cyclonedx.bom", version.ref = "cyclonedx" }
