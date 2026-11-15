@@ -9,21 +9,37 @@ SBOM that silently omits them is worse than no SBOM:
     coordinates or licences.
 
 Both are added here, from the same pins the build uses. The script then refuses to write an SBOM that
-is empty, thin, or missing any of them — the previous approach produced a 678-byte document that CI
+is empty, thin, or missing any of them — an earlier approach produced a 678-byte document that CI
 happily uploaded.
+
+The plugin's output path depends on its configuration and on the plugin version, so the file is
+discovered rather than assumed. A wrong guess used to fail with "is missing" while the task had in
+fact succeeded.
 """
+import glob
 import json
 import os
 import sys
 
-IN = "app/build/reports/bom.json"
 OUT = "max-patcher-sbom.cdx.json"
+CANDIDATES = [
+    "app/build/reports/bom.json",
+    "build/reports/bom.json",
+]
+PATTERNS = [
+    "app/build/reports/*.json",
+    "build/reports/*.json",
+    "app/build/**/bom*.json",
+]
 
 # Must match embeddedJvms in app/build.gradle.kts and vendor/PINS.md.
 EMBEDDED_JRE = [
-    ("OpenJDK 25 (Android, arm64-v8a)", "25", "d3eb7afe2240c26728a1bb440502c5f18ac3883e932d202dd7f0c9bcbbce4c37"),
-    ("OpenJDK 25 (Android, x86_64)", "25", "7fca862ee1b2d5fe23cd9c9c3d9b7ad3c241947ad1a6cc9464ef2e674867105d"),
-    ("OpenJDK 17 (Android, armeabi-v7a)", "17", "4a9134f1ebf6340dd855805d351712462cddab6f3c2684da7e7da10ccf06648d"),
+    ("OpenJDK 25 (Android, arm64-v8a)", "25",
+     "d3eb7afe2240c26728a1bb440502c5f18ac3883e932d202dd7f0c9bcbbce4c37"),
+    ("OpenJDK 25 (Android, x86_64)", "25",
+     "7fca862ee1b2d5fe23cd9c9c3d9b7ad3c241947ad1a6cc9464ef2e674867105d"),
+    ("OpenJDK 17 (Android, armeabi-v7a)", "17",
+     "4a9134f1ebf6340dd855805d351712462cddab6f3c2684da7e7da10ccf06648d"),
 ]
 VENDORED = [
     ("ARSCLib", "675bed2d", "Apache-2.0",
@@ -37,14 +53,39 @@ VENDORED = [
 ]
 MIN_COMPONENTS = 50
 
-try:
-    bom = json.load(open(IN))
-except FileNotFoundError:
-    sys.exit("%s is missing: run :app:cyclonedxBom first" % IN)
 
+def find_bom():
+    for path in CANDIDATES:
+        if os.path.exists(path):
+            return path
+    found = []
+    for pattern in PATTERNS:
+        found.extend(glob.glob(pattern, recursive=True))
+    usable = []
+    for path in sorted(set(found)):
+        try:
+            data = json.load(open(path))
+        except Exception:
+            continue
+        if data.get("bomFormat") == "CycloneDX" and data.get("components"):
+            usable.append((len(data["components"]), path))
+    if not usable:
+        return None
+    usable.sort()
+    return usable[-1][1]
+
+
+source = find_bom()
+if not source:
+    listing = sorted(glob.glob("app/build/reports/*")) + sorted(glob.glob("build/reports/*"))
+    sys.exit("no CycloneDX document found. Looked in %s. Reports directory holds: %s"
+             % (", ".join(CANDIDATES + PATTERNS), listing))
+
+bom = json.load(open(source))
 components = bom.get("components") or []
 if not components:
-    sys.exit("the CycloneDX document has no components; refusing to publish it")
+    sys.exit("%s has no components; refusing to publish it" % source)
+print("source document: %s (%d components)" % (source, len(components)))
 
 have = {(c.get("name") or "").lower() for c in components}
 
@@ -84,12 +125,11 @@ for name, version, licence, description, purl in VENDORED:
         "licenses": [{"license": {"id": licence}}],
         "purl": purl,
         "properties": [
-            {"name": "max:discovered-by", "value": "manual: vendored, not resolved from a repository"},
+            {"name": "max:discovered-by",
+             "value": "manual: vendored, not resolved from a repository"},
         ],
     })
 
-# Every component must be identifiable. A component with no name or version is a hole in the
-# inventory, and the point of this file is that it has no holes.
 nameless = [c for c in components if not (c.get("name") or "").strip()]
 versionless = [c for c in components if not (c.get("version") or "").strip()]
 if nameless:
@@ -108,8 +148,8 @@ for required in ["arsc", "smali", "libsu", "openjdk"]:
 bom["components"] = sorted(components, key=lambda c: (c.get("name") or "").lower())
 bom.setdefault("metadata", {})
 bom["metadata"]["properties"] = (bom["metadata"].get("properties") or []) + [
-    {"name": "max:generated-from", "value": "Gradle releaseRuntimeClasspath, completed by "
-                                            ".github/scripts/sbom_postprocess.py"},
+    {"name": "max:generated-from",
+     "value": "Gradle dependency graph, completed by .github/scripts/sbom_postprocess.py"},
 ]
 with open(OUT, "w") as f:
     json.dump(bom, f, indent=2)
