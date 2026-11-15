@@ -473,23 +473,15 @@ val licensesByUrl = mapOf(
 // What the plugin cannot see, and what .github/scripts/sbom_postprocess.py adds: the three embedded
 // JREs (downloaded by a Gradle task, never resolved as dependencies) and the vendored composites
 // (ARSCLib, smali), which Gradle reports as project dependencies without coordinates.
-cyclonedxBom {
-    includeConfigs.set(listOf("releaseRuntimeClasspath"))
-    skipConfigs.set(listOf(
-        "debugRuntimeClasspath",
-        "debugUnitTestRuntimeClasspath",
-        "releaseUnitTestRuntimeClasspath",
-        "androidTestReleaseRuntimeClasspath",
-    ))
-    includeLicenses.set(true)
-    includeBuildSystem.set(true)
-    schemaVersion.set("1.6")
-    destination.set(layout.buildDirectory.dir("reports"))
-    outputName.set("bom")
-    outputFormat.set("json")
-    componentVersion.set(version.toString())
-    projectName.set("MAX Patcher")
-}
+// The plugin's own defaults are used: all configurations, schema 1.6, output at
+// build/reports/bom.json. Configuring it from the Kotlin DSL needs the plugin's extension type,
+// whose name differs between 1.x and 3.x; rather than pin a type this build depends on the
+// defaults, and .github/scripts/sbom_postprocess.py does the completion and the checks.
+//
+// Note for a future change: if you do configure it, import the extension type explicitly
+// (org.cyclonedx.gradle.CycloneDxExtension) — the unqualified `cyclonedxBom { }` block resolves to
+// DependencyHandler.cyclonedxBom and fails to compile.
+
 
 licensee {
     listOf("0BSD", "Apache-2.0", "BSD-3-Clause").forEach(::allow)
